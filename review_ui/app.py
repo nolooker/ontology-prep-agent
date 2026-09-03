@@ -32,6 +32,7 @@ import json
 import os
 import sys
 
+import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -64,6 +65,7 @@ DEFAULT_OUTPUT = "data/samples/relations_reviewed.json"
 DEFAULT_RESOLUTION_REPORT = "data/samples/entity_resolution_report.json"
 DEFAULT_RESOLUTION_OUTPUT = "data/samples/entity_resolution_resolved.json"
 DEFAULT_GRAPH_OUTPUT = "data/samples/graph_mock.json"
+DEFAULT_SAMPLE_CSV = "data/samples/sample_150.csv"
 GRAPH_VIEW_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "graph_view_template.html")
 DEFAULT_TEXT_SOURCE = "data/raw_unstructured/seongsu_cafe_street_demo.txt"
 DEFAULT_TEXT_LLM_OUTPUT = "data/samples/entities_candidates_text_llm.json"
@@ -291,6 +293,29 @@ AI가 "A는 B다"라는 형태로 만든 **관계 후보**들을 하나씩 보�
             "⚠️저신뢰(<0.5) 항목처럼 AI가 자신 없어 한 것부터 우선 확인하시는 걸 권장합니다. "
             "사이드바 필터에서 골라볼 수 있습니다."
         )
+
+    st.markdown("""
+---
+## 🧾 테스트에 쓰인 원본 데이터 예시
+
+지금 이 화면의 관계 후보들은 소상공인시장진흥공단이 공개한 전국 상가(상권)
+정보 중 무작위로 뽑은 샘플에서 만들어졌습니다. 어떤 원본 데이터에서
+시작됐는지 궁금하시면 아래 표를 참고하세요.
+""")
+    if os.path.exists(DEFAULT_SAMPLE_CSV):
+        preview_cols = ["상호명", "상권업종대분류명", "상권업종중분류명", "상권업종소분류명",
+                         "시도명", "시군구명", "행정동명", "도로명주소"]
+        df = pd.read_csv(DEFAULT_SAMPLE_CSV)
+        available_cols = [c for c in preview_cols if c in df.columns]
+        st.dataframe(df[available_cols].head(10), use_container_width=True, hide_index=True)
+        st.caption(
+            f"전국 16개 시도 상가 데이터(약 277만 건) 중 무작위로 뽑은 {len(df)}건 중 10건 미리보기. "
+            f"원본 CSV 전체(약 1.5GB)는 용량 문제로 이 저장소에는 포함하지 않았습니다 — "
+            "필요하면 [공공데이터포털](https://www.data.go.kr/data/15083033/fileData.do)에서 "
+            "\"소상공인시장진흥공단_상가(상권)정보\"를 검색해 받으실 수 있습니다."
+        )
+    else:
+        st.caption(f"예시 데이터 파일을 찾을 수 없습니다: {DEFAULT_SAMPLE_CSV}")
 
 
 # ---------------------------------------------------------------------------
@@ -713,7 +738,7 @@ def render_graph_tab(args):
 def main():
     args = parse_args()
     st.set_page_config(page_title="온톨로지 검증 UI", layout="wide")
-    st.title("온톨로지 데이터 준비 — 사람 검증(③) 및 그래프 확인(④)")
+    st.title("온톨로지 데이터 — 사람 검증 및 그래프 확인")
 
     render_api_test_section()
     st.divider()
