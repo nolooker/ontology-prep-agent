@@ -1,0 +1,35 @@
+[
+  {
+    "text_entity": "서울특별시",
+    "text_entity_type": "시도",
+    "match_type": "no_match",
+    "candidates": [],
+    "confidence": 0.0,
+    "note": "참조 목록에 없음 — 신규 엔티티로 그래프에 추가하거나 오탈자 여부 확인 필요",
+    "human_decision": "신규 엔티티로 추가",
+    "decision_status": "resolved"
+  },
+  {
+    "text_entity": "성동구",
+    "text_entity_type": "시군구",
+    "match_type": "no_match",
+    "candidates": [],
+    "confidence": 0.0,
+    "note": "참조 목록에 없음 — 신규 엔티티로 그래프에 추가하거나 오탈자 여부 확인 필요",
+    "human_decision": "신규 엔티티로 추가",
+    "decision_status": "resolved"
+  },
+  {
+    "text_entity": "성수동",
+    "text_entity_type": "행정동",
+    "match_type": "prefix_ambiguous",
+    "candidates": [
+      "성수동1가",
+      "성수동2가"
+    ],
+    "confidence": 0.3,
+    "note": "동일 접두어를 가진 후보가 여러 개 — 사람이 어느 세부 지역인지 확인해야 함",
+    "human_decision": "성수동1가",
+    "decision_status": "resolved"
+  }
+]

@@ -1,0 +1,1928 @@
+[
+  {
+    "row_index": 0,
+    "relations": [
+      {
+        "subject": "웨스트피지오짐",
+        "predicate": "속한업종",
+        "object": "헬스장",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "헬스장",
+        "predicate": "상위분류",
+        "object": "스포츠 서비스",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "스포츠 서비스",
+        "predicate": "상위분류",
+        "object": "예술·스포츠",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "웨스트피지오짐",
+        "predicate": "표준산업분류매핑",
+        "object": "체력 단련시설 운영업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "웨스트피지오짐",
+        "predicate": "위치",
+        "object": "마북동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "마북동",
+        "predicate": "소속",
+        "object": "용인시 기흥구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "용인시 기흥구",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 1,
+    "relations": [
+      {
+        "subject": "이리카츠",
+        "predicate": "속한업종",
+        "object": "돼지고기 구이/찜",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "돼지고기 구이/찜",
+        "predicate": "상위분류",
+        "object": "한식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "한식",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "이리카츠",
+        "predicate": "표준산업분류매핑",
+        "object": "한식 육류 요리 전문점",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "이리카츠",
+        "predicate": "위치",
+        "object": "온양읍",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "온양읍",
+        "predicate": "소속",
+        "object": "울주군",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "울주군",
+        "predicate": "소속",
+        "object": "울산광역시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "이리카츠",
+        "predicate": "소재",
+        "object": "이리카츠",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 2,
+    "relations": [
+      {
+        "subject": "투사랑해사랑해노래연습장",
+        "predicate": "속한업종",
+        "object": "노래방",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "노래방",
+        "predicate": "상위분류",
+        "object": "유원지·오락",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "유원지·오락",
+        "predicate": "상위분류",
+        "object": "예술·스포츠",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "투사랑해사랑해노래연습장",
+        "predicate": "표준산업분류매핑",
+        "object": "노래 연습장 운영업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "투사랑해사랑해노래연습장",
+        "predicate": "위치",
+        "object": "상대동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "상대동",
+        "predicate": "소속",
+        "object": "포항시 남구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "포항시 남구",
+        "predicate": "소속",
+        "object": "경상북도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 3,
+    "relations": [
+      {
+        "subject": "건축사사무소오삼일비",
+        "predicate": "속한업종",
+        "object": "건축 설계 및 관련 서비스업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "건축 설계 및 관련 서비스업",
+        "predicate": "상위분류",
+        "object": "기술 서비스",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "기술 서비스",
+        "predicate": "상위분류",
+        "object": "과학·기술",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "건축사사무소오삼일비",
+        "predicate": "표준산업분류매핑",
+        "object": "건축 설계 및 관련 서비스업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "건축사사무소오삼일비",
+        "predicate": "위치",
+        "object": "장안1동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "장안1동",
+        "predicate": "소속",
+        "object": "동대문구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "동대문구",
+        "predicate": "소속",
+        "object": "서울특별시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "건축사사무소오삼일비",
+        "predicate": "소재",
+        "object": "J아파트",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 4,
+    "relations": [
+      {
+        "subject": "현동노래방",
+        "predicate": "속한업종",
+        "object": "일반 유흥 주점",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "일반 유흥 주점",
+        "predicate": "상위분류",
+        "object": "주점",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "주점",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "현동노래방",
+        "predicate": "표준산업분류매핑",
+        "object": "일반 유흥 주점업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "현동노래방",
+        "predicate": "위치",
+        "object": "현동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "현동",
+        "predicate": "소속",
+        "object": "창원시 마산합포구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "창원시 마산합포구",
+        "predicate": "소속",
+        "object": "경상남도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 5,
+    "relations": [
+      {
+        "subject": "청도감이야기",
+        "predicate": "속한업종",
+        "object": "백반/한정식",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "백반/한정식",
+        "predicate": "상위분류",
+        "object": "한식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "한식",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "청도감이야기",
+        "predicate": "표준산업분류매핑",
+        "object": "한식 일반 음식점업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "청도감이야기",
+        "predicate": "위치",
+        "object": "운문면",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "운문면",
+        "predicate": "소속",
+        "object": "청도군",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "청도군",
+        "predicate": "소속",
+        "object": "경상북도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 6,
+    "relations": [
+      {
+        "subject": "부자부동산중개법인",
+        "predicate": "속한업종",
+        "object": "부동산 중개/대리업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "부동산 중개/대리업",
+        "predicate": "상위분류",
+        "object": "부동산 서비스",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "부동산 서비스",
+        "predicate": "상위분류",
+        "object": "부동산",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "부자부동산중개법인",
+        "predicate": "표준산업분류매핑",
+        "object": "부동산 중개 및 대리업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "부자부동산중개법인",
+        "predicate": "위치",
+        "object": "중앙동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "중앙동",
+        "predicate": "소속",
+        "object": "창원시 성산구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "창원시 성산구",
+        "predicate": "소속",
+        "object": "경상남도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "부자부동산중개법인",
+        "predicate": "소재",
+        "object": "올림피아상가",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 7,
+    "relations": [
+      {
+        "subject": "티오엠",
+        "predicate": "속한업종",
+        "object": "광고 대행업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "광고 대행업",
+        "predicate": "상위분류",
+        "object": "광고",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "광고",
+        "predicate": "상위분류",
+        "object": "과학·기술",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "티오엠",
+        "predicate": "표준산업분류매핑",
+        "object": "광고 대행업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "티오엠",
+        "predicate": "위치",
+        "object": "백운면",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "백운면",
+        "predicate": "소속",
+        "object": "제천시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "제천시",
+        "predicate": "소속",
+        "object": "충청북도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 8,
+    "relations": [
+      {
+        "subject": "원디엑스",
+        "predicate": "속한업종",
+        "object": "환경 관련 엔지니어링 서비스업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "환경 관련 엔지니어링 서비스업",
+        "predicate": "상위분류",
+        "object": "기술 서비스",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "기술 서비스",
+        "predicate": "상위분류",
+        "object": "과학·기술",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "원디엑스",
+        "predicate": "표준산업분류매핑",
+        "object": "환경 관련 엔지니어링 서비스업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "원디엑스",
+        "predicate": "위치",
+        "object": "여의동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "여의동",
+        "predicate": "소속",
+        "object": "전주시 덕진구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "전주시 덕진구",
+        "predicate": "소속",
+        "object": "전북특별자치도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "원디엑스",
+        "predicate": "소재",
+        "object": "스페이스온지식산업센터",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 9,
+    "relations": [
+      {
+        "subject": "수담수학교습소",
+        "predicate": "속한업종",
+        "object": "입시·교과학원",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "입시·교과학원",
+        "predicate": "상위분류",
+        "object": "일반 교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "일반 교육",
+        "predicate": "상위분류",
+        "object": "교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "수담수학교습소",
+        "predicate": "표준산업분류매핑",
+        "object": "일반 교과학원",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "수담수학교습소",
+        "predicate": "위치",
+        "object": "고덕2동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "고덕2동",
+        "predicate": "소속",
+        "object": "강동구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "강동구",
+        "predicate": "소속",
+        "object": "서울특별시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "수담수학교습소",
+        "predicate": "소재",
+        "object": "고덕그라시움아파트",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 10,
+    "relations": [
+      {
+        "subject": "더춘장",
+        "predicate": "속한업종",
+        "object": "중국집",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "중국집",
+        "predicate": "상위분류",
+        "object": "중식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "중식",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "더춘장",
+        "predicate": "표준산업분류매핑",
+        "object": "중식 음식점업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "더춘장",
+        "predicate": "위치",
+        "object": "안양1동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "안양1동",
+        "predicate": "소속",
+        "object": "안양시 만안구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "안양시 만안구",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 11,
+    "relations": [
+      {
+        "subject": "맨투맨학원",
+        "predicate": "속한업종",
+        "object": "입시·교과학원",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "입시·교과학원",
+        "predicate": "상위분류",
+        "object": "일반 교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "일반 교육",
+        "predicate": "상위분류",
+        "object": "교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "맨투맨학원",
+        "predicate": "표준산업분류매핑",
+        "object": "일반 교과학원",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "맨투맨학원",
+        "predicate": "위치",
+        "object": "송산3동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "송산3동",
+        "predicate": "소속",
+        "object": "의정부시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "의정부시",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "맨투맨학원",
+        "predicate": "소재",
+        "object": "폴리프라자",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 12,
+    "relations": [
+      {
+        "subject": "기와집",
+        "predicate": "속한업종",
+        "object": "펜션",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "펜션",
+        "predicate": "상위분류",
+        "object": "일반 숙박",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "일반 숙박",
+        "predicate": "상위분류",
+        "object": "숙박",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "기와집",
+        "predicate": "표준산업분류매핑",
+        "object": "민박업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "기와집",
+        "predicate": "위치",
+        "object": "서종면",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "서종면",
+        "predicate": "소속",
+        "object": "양평군",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "양평군",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 13,
+    "relations": [
+      {
+        "subject": "제이피누수",
+        "predicate": "속한업종",
+        "object": "광고물 설계/제작업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "광고물 설계/제작업",
+        "predicate": "상위분류",
+        "object": "광고",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "광고",
+        "predicate": "상위분류",
+        "object": "과학·기술",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "제이피누수",
+        "predicate": "표준산업분류매핑",
+        "object": "광고물 문안; 도안; 설계 등 작성업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "제이피누수",
+        "predicate": "위치",
+        "object": "보정동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "보정동",
+        "predicate": "소속",
+        "object": "용인시 기흥구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "용인시 기흥구",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "제이피누수",
+        "predicate": "소재",
+        "object": "휴먼타워",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 14,
+    "relations": [
+      {
+        "subject": "롯데1번지부동산공인중개사사무소",
+        "predicate": "속한업종",
+        "object": "부동산 중개/대리업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "부동산 중개/대리업",
+        "predicate": "상위분류",
+        "object": "부동산 서비스",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "부동산 서비스",
+        "predicate": "상위분류",
+        "object": "부동산",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "롯데1번지부동산공인중개사사무소",
+        "predicate": "표준산업분류매핑",
+        "object": "부동산 중개 및 대리업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "롯데1번지부동산공인중개사사무소",
+        "predicate": "위치",
+        "object": "사직3동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "사직3동",
+        "predicate": "소속",
+        "object": "동래구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "동래구",
+        "predicate": "소속",
+        "object": "부산광역시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 15,
+    "relations": [
+      {
+        "subject": "정시파이터수학교습소",
+        "predicate": "속한업종",
+        "object": "입시·교과학원",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "입시·교과학원",
+        "predicate": "상위분류",
+        "object": "일반 교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "일반 교육",
+        "predicate": "상위분류",
+        "object": "교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "정시파이터수학교습소",
+        "predicate": "표준산업분류매핑",
+        "object": "일반 교과학원",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "정시파이터수학교습소",
+        "predicate": "위치",
+        "object": "목5동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "목5동",
+        "predicate": "소속",
+        "object": "양천구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "양천구",
+        "predicate": "소속",
+        "object": "서울특별시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "정시파이터수학교습소",
+        "predicate": "소재",
+        "object": "현대월드타워",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 16,
+    "relations": [
+      {
+        "subject": "복음내과의원",
+        "predicate": "속한업종",
+        "object": "내과/소아과 의원",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "내과/소아과 의원",
+        "predicate": "상위분류",
+        "object": "의원",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "의원",
+        "predicate": "상위분류",
+        "object": "보건의료",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "복음내과의원",
+        "predicate": "표준산업분류매핑",
+        "object": "일반의원",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "복음내과의원",
+        "predicate": "위치",
+        "object": "봉선2동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "봉선2동",
+        "predicate": "소속",
+        "object": "남구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "남구",
+        "predicate": "소속",
+        "object": "전남광주통합특별시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 17,
+    "relations": [
+      {
+        "subject": "지고트",
+        "predicate": "속한업종",
+        "object": "여성 의류 소매업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "여성 의류 소매업",
+        "predicate": "상위분류",
+        "object": "섬유·의복·신발 소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "섬유·의복·신발 소매",
+        "predicate": "상위분류",
+        "object": "소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "지고트",
+        "predicate": "표준산업분류매핑",
+        "object": "여자용 겉옷 소매업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "지고트",
+        "predicate": "위치",
+        "object": "광희동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "광희동",
+        "predicate": "소속",
+        "object": "중구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "중구",
+        "predicate": "소속",
+        "object": "서울특별시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "지고트",
+        "predicate": "소재",
+        "object": "지고트현대시티타워",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 18,
+    "relations": [
+      {
+        "subject": "슬림점핑다이어트",
+        "predicate": "속한업종",
+        "object": "건강보조식품 소매업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "건강보조식품 소매업",
+        "predicate": "상위분류",
+        "object": "식료품 소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "식료품 소매",
+        "predicate": "상위분류",
+        "object": "소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "슬림점핑다이어트",
+        "predicate": "표준산업분류매핑",
+        "object": "건강 보조식품 소매업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "슬림점핑다이어트",
+        "predicate": "위치",
+        "object": "유천동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "유천동",
+        "predicate": "소속",
+        "object": "달서구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "달서구",
+        "predicate": "소속",
+        "object": "대구광역시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 19,
+    "relations": [
+      {
+        "subject": "구구열쇠",
+        "predicate": "속한업종",
+        "object": "철물/공구 소매업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "철물/공구 소매업",
+        "predicate": "상위분류",
+        "object": "철물·건설자재 소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "철물·건설자재 소매",
+        "predicate": "상위분류",
+        "object": "소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "구구열쇠",
+        "predicate": "표준산업분류매핑",
+        "object": "철물 및 난방용구 소매업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "구구열쇠",
+        "predicate": "위치",
+        "object": "형곡2동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "형곡2동",
+        "predicate": "소속",
+        "object": "구미시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "구미시",
+        "predicate": "소속",
+        "object": "경상북도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 20,
+    "relations": [
+      {
+        "subject": "시원뷰티",
+        "predicate": "속한업종",
+        "object": "피부 관리실",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "피부 관리실",
+        "predicate": "상위분류",
+        "object": "이용·미용",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "이용·미용",
+        "predicate": "상위분류",
+        "object": "수리·개인",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "시원뷰티",
+        "predicate": "표준산업분류매핑",
+        "object": "피부 미용업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "시원뷰티",
+        "predicate": "위치",
+        "object": "삼산2동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "삼산2동",
+        "predicate": "소속",
+        "object": "부평구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "부평구",
+        "predicate": "소속",
+        "object": "인천광역시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "시원뷰티",
+        "predicate": "소재",
+        "object": "삼산동이리옴프라자",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 21,
+    "relations": [
+      {
+        "subject": "치킨신드롬",
+        "predicate": "속한업종",
+        "object": "치킨",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨",
+        "predicate": "상위분류",
+        "object": "기타 간이",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "기타 간이",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨신드롬",
+        "predicate": "표준산업분류매핑",
+        "object": "치킨 전문점",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨신드롬",
+        "predicate": "위치",
+        "object": "음성읍",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "음성읍",
+        "predicate": "소속",
+        "object": "음성군",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "음성군",
+        "predicate": "소속",
+        "object": "충청북도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 22,
+    "relations": [
+      {
+        "subject": "다모아",
+        "predicate": "속한업종",
+        "object": "복권 발행/판매업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "복권 발행/판매업",
+        "predicate": "상위분류",
+        "object": "유원지·오락",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "유원지·오락",
+        "predicate": "상위분류",
+        "object": "예술·스포츠",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "다모아",
+        "predicate": "표준산업분류매핑",
+        "object": "복권 발행 및 판매업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "다모아",
+        "predicate": "위치",
+        "object": "구로5동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "구로5동",
+        "predicate": "소속",
+        "object": "구로구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "구로구",
+        "predicate": "소속",
+        "object": "서울특별시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 23,
+    "relations": [
+      {
+        "subject": "향림한약국",
+        "predicate": "속한업종",
+        "object": "약국",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "약국",
+        "predicate": "상위분류",
+        "object": "의약·화장품 소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "의약·화장품 소매",
+        "predicate": "상위분류",
+        "object": "소매",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "향림한약국",
+        "predicate": "표준산업분류매핑",
+        "object": "의약품 및 의료용품 소매업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "향림한약국",
+        "predicate": "위치",
+        "object": "반송동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "반송동",
+        "predicate": "소속",
+        "object": "창원시 성산구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "창원시 성산구",
+        "predicate": "소속",
+        "object": "경상남도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 24,
+    "relations": [
+      {
+        "subject": "촌랩",
+        "predicate": "속한업종",
+        "object": "청소년 수련시설",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "청소년 수련시설",
+        "predicate": "상위분류",
+        "object": "기타 교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "기타 교육",
+        "predicate": "상위분류",
+        "object": "교육",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "촌랩",
+        "predicate": "표준산업분류매핑",
+        "object": "청소년 수련시설 운영업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "촌랩",
+        "predicate": "위치",
+        "object": "퇴촌면",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "퇴촌면",
+        "predicate": "소속",
+        "object": "광주시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "광주시",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 25,
+    "relations": [
+      {
+        "subject": "대성환경개발",
+        "predicate": "속한업종",
+        "object": "건축물 일반 청소업",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "건축물 일반 청소업",
+        "predicate": "상위분류",
+        "object": "청소·방제",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "청소·방제",
+        "predicate": "상위분류",
+        "object": "시설관리·임대",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "대성환경개발",
+        "predicate": "표준산업분류매핑",
+        "object": "건축물 일반 청소업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "대성환경개발",
+        "predicate": "위치",
+        "object": "조원1동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "조원1동",
+        "predicate": "소속",
+        "object": "수원시 장안구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "수원시 장안구",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 26,
+    "relations": [
+      {
+        "subject": "롯데리아범어",
+        "predicate": "속한업종",
+        "object": "버거",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "버거",
+        "predicate": "상위분류",
+        "object": "기타 간이",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "기타 간이",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "롯데리아범어",
+        "predicate": "표준산업분류매핑",
+        "object": "비주거용 건물 임대업",
+        "confidence": 0.35,
+        "evidence": "경고: 상권업종소분류('버거')와 표준산업분류('비주거용 건물 임대업')가 의미적으로 불일치함 — 원본 데이터의 분류 오류 가능성, 사람 검증 필수",
+        "status": "pending"
+      },
+      {
+        "subject": "롯데리아범어",
+        "predicate": "위치",
+        "object": "범어1동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "범어1동",
+        "predicate": "소속",
+        "object": "수성구",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "수성구",
+        "predicate": "소속",
+        "object": "대구광역시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "롯데리아범어",
+        "predicate": "소재",
+        "object": "궁전맨션",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 27,
+    "relations": [
+      {
+        "subject": "아워홈LG디스플레이기숙사점주",
+        "predicate": "속한업종",
+        "object": "구내식당",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "구내식당",
+        "predicate": "상위분류",
+        "object": "구내식당·뷔페",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "구내식당·뷔페",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "아워홈LG디스플레이기숙사점주",
+        "predicate": "표준산업분류매핑",
+        "object": "기관 구내식당업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "아워홈LG디스플레이기숙사점주",
+        "predicate": "위치",
+        "object": "월롱면",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "월롱면",
+        "predicate": "소속",
+        "object": "파주시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "파주시",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 28,
+    "relations": [
+      {
+        "subject": "지투모터스",
+        "predicate": "속한업종",
+        "object": "자동차 세차장",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "자동차 세차장",
+        "predicate": "상위분류",
+        "object": "자동차 수리·세차",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "자동차 수리·세차",
+        "predicate": "상위분류",
+        "object": "수리·개인",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "지투모터스",
+        "predicate": "표준산업분류매핑",
+        "object": "자동차 세차업",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "지투모터스",
+        "predicate": "위치",
+        "object": "광명5동",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "광명5동",
+        "predicate": "소속",
+        "object": "광명시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "광명시",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 29,
+    "relations": [
+      {
+        "subject": "영계치킨",
+        "predicate": "속한업종",
+        "object": "치킨",
+        "confidence": 0.95,
+        "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨",
+        "predicate": "상위분류",
+        "object": "기타 간이",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
+        "status": "pending"
+      },
+      {
+        "subject": "기타 간이",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.95,
+        "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
+        "status": "pending"
+      },
+      {
+        "subject": "영계치킨",
+        "predicate": "표준산업분류매핑",
+        "object": "치킨 전문점",
+        "confidence": 0.8,
+        "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
+        "status": "pending"
+      },
+      {
+        "subject": "영계치킨",
+        "predicate": "위치",
+        "object": "상남면",
+        "confidence": 0.9,
+        "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
+        "status": "pending"
+      },
+      {
+        "subject": "상남면",
+        "predicate": "소속",
+        "object": "밀양시",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "밀양시",
+        "predicate": "소속",
+        "object": "경상남도",
+        "confidence": 0.9,
+        "evidence": "행정구역 상위 관계",
+        "status": "pending"
+      },
+      {
+        "subject": "영계치킨",
+        "predicate": "소재",
+        "object": "밀양예림대동타운",
+        "confidence": 0.85,
+        "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
+        "status": "pending"
+      }
+    ]
+  }
+]

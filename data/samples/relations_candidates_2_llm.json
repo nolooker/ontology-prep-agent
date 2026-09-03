@@ -1,0 +1,180 @@
+[
+  {
+    "row_index": 0,
+    "relations": [
+      {
+        "subject": "치킨플러스동 판교점",
+        "predicate": "속한업종",
+        "object": "치킨",
+        "confidence": 0.95,
+        "evidence": "상가가 소분류업종에 속하는 일반적인 구조임",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨",
+        "predicate": "상위분류",
+        "object": "기타 간이",
+        "confidence": 0.9,
+        "evidence": "소분류업종인 치킨이 중분류업종인 기타 간이 하위에 속함",
+        "status": "pending"
+      },
+      {
+        "subject": "기타 간이",
+        "predicate": "상위분류",
+        "object": "음식",
+        "confidence": 0.9,
+        "evidence": "중분류업종인 기타 간이가 대분류업종인 음식 하위에 속함",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨플러스동 판교점",
+        "predicate": "표준산업분류매핑",
+        "object": "치킨 전문점",
+        "confidence": 0.9,
+        "evidence": "상가의 업종 특성이 표준산업분류와 직접 매핑됨",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨",
+        "predicate": "표준산업분류매핑",
+        "object": " 치킨 전문점",
+        "confidence": 0.9,
+        "evidence": "소분류업종이 표준산업분류명과 직접 대응됨",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨플러스동 판교점",
+        "predicate": "위치",
+        "object": "삼평동",
+        "confidence": 0.95,
+        "evidence": "상가가 행정동/법정동 내에 위치함",
+        "status": "pending"
+      },
+      {
+        "subject": "치킨플러스동 판교점",
+        "predicate": "소재",
+        "object": "봇들마을주공6단지",
+        "confidence": 0.95,
+        "evidence": "상가가 해당 건물에 소재함",
+        "status": "pending"
+      },
+      {
+        "subject": "삼평동",
+        "predicate": "소속",
+        "object": "성남시 분당구",
+        "confidence": 0.99,
+        "evidence": "행정동/법정동이 시군구에 소속됨",
+        "status": "pending"
+      },
+      {
+        "subject": "성남시 분당구",
+        "predicate": "소속",
+        "object": "경기도",
+        "confidence": 0.99,
+        "evidence": "시군구가 시도에 소속됨",
+        "status": "pending"
+      }
+    ]
+  },
+  {
+    "row_index": 1,
+    "relations": [
+      {
+        "subject": "미미엘라",
+        "predicate": "속한업종",
+        "object": "여성 의류 소매업",
+        "confidence": 0.99,
+        "evidence": "상가 '미미엘라'가 소분류업종 '여성 의류 소매업'에 속합니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "여성 의류 소매업",
+        "predicate": "상위분류",
+        "object": "섬유·의복·신발 소매",
+        "confidence": 0.99,
+        "evidence": "소분류업종 '여성 의류 소매업'의 상위 중분류업종은 '섬유·의복·신발 소매'입니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "섬유·의복·신발 소매",
+        "predicate": "상위분류",
+        "object": "소매",
+        "confidence": 0.99,
+        "evidence": "중분류업종 '섬유·의복·신발 소매'의 상위 대분류업종은 '소매'입니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "여성 의류 소매업",
+        "predicate": "표준산업분류매핑",
+        "object": "여자용 겉옷 소매업",
+        "confidence": 0.95,
+        "evidence": "소분류업종 '여성 의류 소매업'과 유사한 표준산업분류로 '여자용 겉옷 소매업'이 매핑됩니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "미미엘라",
+        "predicate": "표준산업분류매핑",
+        "object": "여자용 겉옷 소매업",
+        "confidence": 0.95,
+        "evidence": "상가 '미미엘라'의 업종은 표준산업분류 '여자용 겉옷 소매업'에 해당할 수 있습니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "미미엘라",
+        "predicate": "위치",
+        "object": "삼산동",
+        "confidence": 0.99,
+        "evidence": "상가 '미미엘라'는 행정동 '삼산동'에 위치합니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "미미엘라",
+        "predicate": "위치",
+        "object": "달동",
+        "confidence": 0.95,
+        "evidence": "상가 '미미엘라'는 법정동 '달동' 지역에 위치할 수 있습니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "미미엘라",
+        "predicate": "소재",
+        "object": "울산광역시 남구 왕생로72번길 12",
+        "confidence": 0.99,
+        "evidence": "상가 '미미엘라'의 주소는 건물 엔티티인 '울산광역시 남구 왕생로72번길 12'에 해당합니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "삼산동",
+        "predicate": "소속",
+        "object": "남구",
+        "confidence": 0.99,
+        "evidence": "행정동 '삼산동'은 시군구 '남구'에 소속됩니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "남구",
+        "predicate": "소속",
+        "object": "울산광역시",
+        "confidence": 0.99,
+        "evidence": "시군구 '남구'는 시도 '울산광역시'에 소속됩니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "울산광역시 남구 왕생로72번길 12",
+        "predicate": "위치",
+        "object": "남구",
+        "confidence": 0.99,
+        "evidence": "건물 주소에 시군구 '남구'가 포함됩니다.",
+        "status": "pending"
+      },
+      {
+        "subject": "울산광역시 남구 왕생로72번길 12",
+        "predicate": "위치",
+        "object": "울산광역시",
+        "confidence": 0.99,
+        "evidence": "건물 주소에 시도 '울산광역시'가 포함됩니다.",
+        "status": "pending"
+      }
+    ]
+  }
+]

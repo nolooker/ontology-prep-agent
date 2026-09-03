@@ -1,0 +1,55 @@
+[
+  {
+    "source_doc": "data/raw_unstructured/seongsu_cafe_street_demo.txt",
+    "relations": [
+      {
+        "subject": "성수동 카페거리", "predicate": "위치", "object": "성수동",
+        "confidence": 0.85,
+        "evidence": "원문에서 '성동구 성수동 일대의 카페거리'로 직접 연결됨",
+        "status": "pending"
+      },
+      {
+        "subject": "성수동", "predicate": "소속", "object": "성동구",
+        "confidence": 0.9,
+        "evidence": "원문에서 '성동구 성수동'으로 명시됨",
+        "status": "pending"
+      },
+      {
+        "subject": "성동구", "predicate": "소속", "object": "서울특별시",
+        "confidence": 0.9,
+        "evidence": "원문에서 '서울 성동구'로 명시됨",
+        "status": "pending"
+      },
+      {
+        "subject": "스페셜티 커피 브랜드 1호점", "predicate": "위치", "object": "성수동 카페거리",
+        "confidence": 0.4,
+        "evidence": "경고: 원문에 실제 브랜드명이 명시되지 않아 구체적 상가 엔티티로 확정하기 어려움 — 사람 검증 필요",
+        "status": "pending"
+      },
+      {
+        "subject": "서울시 도시공간본부", "predicate": "수립", "object": "지구단위계획",
+        "confidence": 0.85,
+        "evidence": "원문에서 '서울시 도시공간본부는... 지구단위계획을 새로 결정'로 명시됨",
+        "status": "pending"
+      },
+      {
+        "subject": "지구단위계획", "predicate": "대상지역", "object": "연무장길",
+        "confidence": 0.8,
+        "evidence": "원문에서 '연무장길 구간을 보행자 중심 거리로 조성'으로 명시됨",
+        "status": "pending"
+      },
+      {
+        "subject": "연무장길", "predicate": "소속", "object": "성수동",
+        "confidence": 0.7,
+        "evidence": "원문 문맥상 성수동 내 도로로 유추됨 (직접 명시되지는 않음)",
+        "status": "pending"
+      },
+      {
+        "subject": "성수동 카페거리", "predicate": "통계", "object": "일평균 유동인구 9만 명 이상",
+        "confidence": 0.75,
+        "evidence": "원문에서 '일평균 유동인구는 9만 명을 웃도는 수준'으로 명시됨",
+        "status": "pending"
+      }
+    ]
+  }
+]
