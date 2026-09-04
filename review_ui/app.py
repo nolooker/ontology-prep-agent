@@ -877,7 +877,7 @@ def render_governance_tab(args):
             "생성 소스": src,
             "관계 건수": stat["count"],
             "평균 신뢰도": round(stat["conf_sum"] / stat["count"], 2),
-            "평균 응답시간": f"{round(stat['latency_sum'] / stat['latency_n'])}ms" if stat["latency_n"] else "미기록",
+            "평균 응답시간": f"{stat['latency_sum'] / stat['latency_n'] / 1000:.1f}초" if stat["latency_n"] else "미기록",
             "승인율": f"{stat['approved'] / stat['count']:.0%}" if live_review else "검토 전",
         })
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
@@ -903,8 +903,8 @@ def render_governance_tab(args):
         per_row_ms = avg_extract_ms + avg_relate_ms
 
         c1, c2, c3 = st.columns(3)
-        c1.metric("① 추출 평균 (건당)", f"{avg_extract_ms:.0f}ms" if extract_latencies else "미기록")
-        c2.metric("② 관계생성 평균 (건당)", f"{avg_relate_ms:.0f}ms" if relate_latencies else "미기록")
+        c1.metric("① 추출 평균 (건당)", f"{avg_extract_ms / 1000:.1f}초" if extract_latencies else "미기록")
+        c2.metric("② 관계생성 평균 (건당)", f"{avg_relate_ms / 1000:.1f}초" if relate_latencies else "미기록")
         total_hours = per_row_ms / 1000 * TOTAL_ROWS / 3600
         c3.metric(f"전국 {TOTAL_ROWS:,}건 순차 처리 시", f"약 {total_hours:,.0f}시간")
 
