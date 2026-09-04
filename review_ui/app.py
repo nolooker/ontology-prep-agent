@@ -1,11 +1,12 @@
 """
-③ 검증 UI: 탭 4개로 구성된다.
+③ 검증 UI: 탭 5개로 구성된다.
   - 탭 0: 사용 가이드 — 비개발자를 위한 프로젝트 설명 및 사용법 안내
   - 탭 1: 관계 후보 검증 (승인/거부/수정) — CSV 기반 + 텍스트 기반 후보를
           하나의 목록에서 함께 검증 (source_type으로 구분 표시)
   - 탭 2: 엔티티 해석 검증 — 텍스트에서 뽑힌 위치 등의 엔티티가 실제 어떤
           행정구역/엔티티를 가리키는지 다중 후보 중에서 사람이 확정
   - 탭 3: 그래프 보기 — graph_sink/commit.py 결과물을 인터랙티브하게 탐색
+  - 탭 4: 모델 거버넌스 — 엔티티/관계가 어떤 모델(생성 소스)로 만들어졌는지 통계로 추적
 
 사용법:
     pip install streamlit
@@ -177,8 +178,8 @@ AI가 찾아낸 결과를 사람이 한 번 확인하고 "이건 맞다 / 이건
 화면 맨 위에 있는 **"🔑 API 키로 실제 LLM 추출 테스트"** 는 개발/실험용 기능이라
 일반적인 검토 작업에는 필요 없습니다. 펼쳐보지 않으셔도 됩니다.
 
-그 아래 탭 3개가 실제로 쓰실 화면입니다 (탭 1·2는 ③단계 검수용, 탭 3은 ④단계
-결과물 확인용입니다).
+그 아래 탭 4개가 실제로 쓰실 화면입니다 (탭 1·2는 ③단계 검수용, 탭 3은 ④단계
+결과물 확인용, 탭 4는 데이터 출처를 투명하게 보여주는 부가 기능입니다).
 """)
 
     with st.expander("🔗 탭 1. 관계 후보 검증 — 이게 핵심 작업입니다", expanded=True):
@@ -255,6 +256,20 @@ AI가 "A는 B다"라는 형태로 만든 **관계 후보**들을 하나씩 보�
 - 동그라미를 클릭하면 오른쪽에 그 항목과 연결된 모든 관계, 근거, 신뢰도가 자세히 나옵니다.
 - 상세 패널의 **🏷️ 생성** 표시로 그 노드/관계를 어떤 모델이 만들었는지도 확인할 수 있습니다.
 - 왼쪽 위 검색창에 이름을 입력하면 그 항목을 바로 찾아줍니다.
+""")
+
+    with st.expander("🧠 탭 4. 모델 거버넌스 — 이 데이터를 어떤 AI가 만들었는지 보는 곳"):
+        st.markdown("""
+이 프로젝트는 규칙 기반 로직과 여러 AI 모델(Claude, Gemini, Grok)을 섞어서
+쓰고 있습니다. "지금 보고 있는 이 관계, 도대체 어디서 나온 거야?"라는
+질문에 답하기 위한 화면입니다.
+
+- **소스별 분포**: 전체 엔티티/관계 중 몇 건이 어떤 모델(또는 규칙 기반
+  시뮬레이터)로 만들어졌는지 막대로 보여줍니다.
+- **모델별 평균 신뢰도 · 승인율**: 어떤 모델이 상대적으로 더 정확한
+  결과를 냈는지 비교해볼 수 있습니다. 승인율은 **🔗 관계 후보 검증**
+  탭에서 검토를 시작해야 실시간으로 계산됩니다 (검토 전에는 "검토 전"으로 표시).
+- 특별히 눌러야 할 버튼은 없고, 그냥 훑어보는 통계 화면입니다.
 """)
 
     st.markdown("""
@@ -757,6 +772,100 @@ def render_graph_tab(args):
 
 
 # ---------------------------------------------------------------------------
+# 탭 4: 모델 거버넌스 — 어떤 AI가 이 데이터를 만들었는지 추적
+# ---------------------------------------------------------------------------
+
+def _load_all_entities(*paths):
+    out = []
+    for path in paths:
+        if path and os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                for item in json.load(f):
+                    out.extend(item["entities"])
+    return out
+
+
+def render_governance_tab(args):
+    st.markdown("""
+## 🧠 어떤 AI가 이 데이터를 만들었나
+
+이 프로젝트는 규칙 기반 시뮬레이터와 여러 LLM(Claude/Gemini/Grok)을 섞어서
+엔티티·관계 후보를 만듭니다. 이 탭은 "지금 보고 있는 결과가 정확히 어디서
+왔는지" 투명하게 추적하는 화면입니다 — Mendix AI Studio가 강조하는
+**모델 거버넌스·추적성**을 가볍게 흉내 낸 것입니다.
+""")
+
+    entities_all = _load_all_entities(args.entities, args.entities_text)
+
+    live_review = "relations_state" in st.session_state
+    if live_review:
+        relation_items = st.session_state.relations_state
+    else:
+        relation_items, _ = load_relation_data(args.entities, args.relations, args.entities_text, args.relations_text)
+    relations_all = [r for item in relation_items for r in item["relations"]]
+
+    if not entities_all and not relations_all:
+        st.info("아직 표시할 데이터가 없습니다. 먼저 ①②단계 결과 파일을 준비하세요.")
+        return
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("전체 엔티티", len(entities_all))
+    col2.metric("전체 관계", len(relations_all))
+    sources = {e.get("generated_by", "출처 미기록") for e in entities_all} | \
+        {r.get("generated_by", "출처 미기록") for r in relations_all}
+    col3.metric("사용된 모델/방식 수", len(sources))
+
+    st.markdown("### 📊 소스별 분포")
+
+    def source_counts(items):
+        counts = {}
+        for it in items:
+            src = it.get("generated_by", "출처 미기록")
+            counts[src] = counts.get(src, 0) + 1
+        return counts
+
+    colA, colB = st.columns(2)
+    with colA:
+        st.caption("엔티티 생성 소스")
+        ent_counts = source_counts(entities_all)
+        for src, count in sorted(ent_counts.items(), key=lambda kv: -kv[1]):
+            st.write(f"**{src}** — {count}건")
+            st.progress(count / len(entities_all) if entities_all else 0)
+    with colB:
+        st.caption("관계 생성 소스")
+        rel_counts = source_counts(relations_all)
+        for src, count in sorted(rel_counts.items(), key=lambda kv: -kv[1]):
+            st.write(f"**{src}** — {count}건")
+            st.progress(count / len(relations_all) if relations_all else 0)
+
+    st.markdown("### 🎯 모델별 평균 신뢰도 · 승인율")
+    per_source = {}
+    for r in relations_all:
+        src = r.get("generated_by", "출처 미기록")
+        stat = per_source.setdefault(src, {"count": 0, "conf_sum": 0.0, "approved": 0})
+        stat["count"] += 1
+        stat["conf_sum"] += r["confidence"]
+        if r["status"] in ("approved", "edited"):
+            stat["approved"] += 1
+
+    rows = []
+    for src, stat in sorted(per_source.items(), key=lambda kv: -kv[1]["count"]):
+        rows.append({
+            "생성 소스": src,
+            "관계 건수": stat["count"],
+            "평균 신뢰도": round(stat["conf_sum"] / stat["count"], 2),
+            "승인율": f"{stat['approved'] / stat['count']:.0%}" if live_review else "검토 전",
+        })
+    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+
+    if not live_review:
+        st.caption(
+            "💡 승인율은 '🔗 관계 후보 검증' 탭에서 검토를 한 번이라도 시작하면 "
+            "이 화면에도 실시간으로 반영됩니다 (지금은 아직 검토 전이라 계산하지 않음)."
+        )
+
+
+# ---------------------------------------------------------------------------
 # 메인
 # ---------------------------------------------------------------------------
 
@@ -768,8 +877,8 @@ def main():
     render_api_test_section()
     st.divider()
 
-    tab0, tab1, tab2, tab3 = st.tabs(
-        ["📖 사용 가이드", "🔗 관계 후보 검증", "📍 엔티티 해석 검증", "🕸️ 그래프 보기"]
+    tab0, tab1, tab2, tab3, tab4 = st.tabs(
+        ["📖 사용 가이드", "🔗 관계 후보 검증", "📍 엔티티 해석 검증", "🕸️ 그래프 보기", "🧠 모델 거버넌스"]
     )
     with tab0:
         render_guide_tab()
@@ -779,6 +888,8 @@ def main():
         render_resolution_tab(args)
     with tab3:
         render_graph_tab(args)
+    with tab4:
+        render_governance_tab(args)
 
 
 if __name__ == "__main__":
