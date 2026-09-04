@@ -57,7 +57,7 @@ python relation_gen/generate.py --input data/samples/entities_candidates.json --
 
 ## 검증(③) UI 실행
 
-Streamlit 기반 화면이며, **탭 4개**로 구성되어 있습니다.
+Streamlit 기반 화면이며, **탭 5개**로 구성되어 있습니다.
 
 ```bash
 pip install streamlit
@@ -99,6 +99,17 @@ streamlit run review_ui/app.py -- \
   보여주는 상세 패널을 제공합니다.
 - 파일을 매번 새로 읽으므로 `commit.py`를 다시 돌린 뒤 브라우저를
   새로고침하면 최신 그래프가 반영됩니다. 파일이 없으면 안내 메시지가 뜹니다.
+
+**탭 4. 🧠 모델 거버넌스** (신규)
+- 엔티티/관계마다 붙는 `generated_by`(어떤 provider:model 또는
+  `simulate_pipeline`이 만들었는지)와 `latency_ms`(API 호출 소요 시간)
+  태그를 집계해서 보여줍니다: 소스별 분포, 모델별 평균 신뢰도·응답
+  속도·승인율(승인율은 탭 1에서 검토를 시작해야 실시간 계산됨).
+- 실측 응답 속도를 바탕으로 "전국 데이터(약 277만 건) 전체에 이
+  파이프라인을 순차로 돌리면 얼마나 걸릴지"도 추정해서 보여줍니다
+  (실측 건수가 적을수록 참고용 수치임을 화면에 명시).
+- Mendix AI Studio가 강조하는 모델 거버넌스·추적성 개념을 가볍게
+  흉내 낸 것으로, 실제 모델 배포/모니터링 기능은 없습니다.
 
 각 탭 하단(사이드바)의 **저장 버튼**을 눌러야 결과가 파일로 반영됩니다.
 
@@ -168,8 +179,9 @@ python graph_sink/commit.py \
   섞여 있어도 됩니다 — `review_ui/app.py`가 두 원천을 이미 하나의 파일로 저장합니다.
 
 **데모 실행 결과** (`data/samples/relations_reviewed_combined_demo.json` +
-`data/samples/entity_resolution_resolved_demo.json` 사용, CSV 30건 + 텍스트 1건):
-노드 196개, 엣지 229개. "성수동"(텍스트) → "성수동1가"(CSV 법정동)로 정상 병합됨을
+`data/samples/entity_resolution_resolved_demo.json` 사용, CSV 32건 + 텍스트 1건 —
+CSV 32건 중 2건은 `gemini-3.5-flash-lite`로 실제 호출해 얻은 결과):
+노드 204개, 엣지 251개. "성수동"(텍스트) → "성수동1가"(CSV 법정동)로 정상 병합됨을
 `data/samples/graph_mock.json`에서 확인할 수 있습니다.
 
 ## 파이프라인 흐름
@@ -198,6 +210,9 @@ relations_candidates.json               relations_candidates_text.json
 전국 16개 시도 CSV(총 277만 건)에서 무작위 30건을 뽑아
 `simulate_pipeline.py`로 엔티티/관계 후보를 생성해봤습니다.
 (`extract.py`/`generate.py`와 동일한 스키마, LLM 호출 대신 규칙 기반으로 판단)
+현재 `data/samples/entities_candidates.json`/`relations_candidates.json`에는
+이 30건 뒤에 실제 `gemini-3.5-flash-lite`로 처리한 2건(row 30-31)이 추가되어
+총 32건이 들어있습니다 — 모델 거버넌스 탭에서 실제 응답 속도를 보여주기 위함입니다.
 
 **발견한 흥미로운 케이스**: "롯데리아범어" 행 — 상권업종소분류는 "버거"인데
 표준산업분류명은 "비주거용 건물 임대업"으로 되어 있어 원본 데이터 자체의
