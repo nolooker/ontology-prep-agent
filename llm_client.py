@@ -15,8 +15,8 @@ Grok(xAI)은 OpenAI 호환 REST API라 openai 패키지를 base_url만 바꿔서
     from llm_client import call_llm, resolve_api_key, default_model, strip_json_fence
 
     api_key = resolve_api_key("gemini")
-    raw = call_llm(provider="gemini", api_key=api_key, model=default_model("gemini"),
-                    system=SYSTEM_PROMPT, user=user_prompt, max_tokens=1000)
+    raw, elapsed_seconds = call_llm(provider="gemini", api_key=api_key, model=default_model("gemini"),
+                                     system=SYSTEM_PROMPT, user=user_prompt, max_tokens=1000)
     data = json.loads(strip_json_fence(raw))
 """
 import os
@@ -50,8 +50,9 @@ def default_model(provider: str) -> str:
     return DEFAULT_MODELS[provider]
 
 
-def call_llm(provider: str, api_key: str, model: str, system: str, user: str, max_tokens: int = 1500) -> str:
-    """LLM을 호출하고 응답 텍스트를 반환한다 (코드펜스 제거는 strip_json_fence로 별도 처리)."""
+def call_llm(provider: str, api_key: str, model: str, system: str, user: str, max_tokens: int = 1500):
+    """LLM을 호출하고 (응답 텍스트, 소요 시간(초)) 튜플을 반환한다.
+    코드펜스 제거는 strip_json_fence로 별도 처리."""
     if provider == "anthropic":
         return _call_anthropic(api_key, model, system, user, max_tokens)
     if provider == "gemini":
@@ -63,11 +64,15 @@ def call_llm(provider: str, api_key: str, model: str, system: str, user: str, ma
 
 def _with_retry(call_fn, is_retryable):
     """일시적 오류(과부하/rate limit 등)는 지수 백오프로 재시도하고,
-    그 외 오류(인증 실패 등)는 즉시 올린다."""
+    그 외 오류(인증 실패 등)는 즉시 올린다.
+    반환값: (결과, 성공한 시도의 소요 시간(초)) — 재시도 대기 시간은 제외한,
+    실제 모델 응답 시간만 측정 (모델별 속도 비교/거버넌스용)."""
     backoff = INITIAL_BACKOFF_SECONDS
     for attempt in range(MAX_RETRIES + 1):
         try:
-            return call_fn()
+            start = time.time()
+            result = call_fn()
+            return result, time.time() - start
         except Exception as e:
             if attempt < MAX_RETRIES and is_retryable(e):
                 print(f"[재시도 {attempt + 1}/{MAX_RETRIES}] 일시적 오류, {backoff:.0f}초 후 재시도: {e}")
@@ -169,4 +174,14 @@ def tag_generated_by(items: list, label: str) -> list:
     """엔티티/관계 딕셔너리 리스트에 출처 라벨을 일괄로 붙인다."""
     for item in items:
         item["generated_by"] = label
+    return items
+
+
+def tag_latency(items: list, elapsed_seconds) -> list:
+    """엔티티/관계 딕셔너리 리스트에 이 결과를 만든 API 호출의 소요 시간(ms)을 붙인다.
+    elapsed_seconds가 None이면(예: 호출 자체가 실패한 경우) 아무것도 붙이지 않는다."""
+    if elapsed_seconds is None:
+        return items
+    for item in items:
+        item["latency_ms"] = round(elapsed_seconds * 1000)
     return items

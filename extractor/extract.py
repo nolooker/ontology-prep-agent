@@ -32,7 +32,9 @@ import sys
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from llm_client import call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by
+from llm_client import (
+    call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by, tag_latency,
+)
 
 SYSTEM_PROMPT = """당신은 온톨로지 구축을 위한 정보 추출 엔진입니다.
 입력으로 상가(상권) 데이터 한 행이 주어지면, 그 행에서 식별 가능한
@@ -62,19 +64,20 @@ def build_user_prompt(row: dict) -> str:
     return "다음 행에서 엔티티 후보를 추출하세요:\n" + "\n".join(lines)
 
 
-def extract_row(provider: str, api_key: str, model: str, row: dict) -> list:
+def extract_row(provider: str, api_key: str, model: str, row: dict):
+    """반환값: (엔티티 리스트, API 호출 소요 시간(초) 또는 실패 시 None)"""
     try:
-        raw = call_llm(provider, api_key, model, SYSTEM_PROMPT, build_user_prompt(row), max_tokens=2048)
+        raw, elapsed = call_llm(provider, api_key, model, SYSTEM_PROMPT, build_user_prompt(row), max_tokens=2048)
     except Exception as e:
         # 재시도까지 소진한 뒤에도 실패하면 이 행만 건너뛰고 나머지 배치는 계속 진행한다.
         print(f"[경고] API 호출 실패, 이 행은 건너뜀: {e}")
-        return [{"type": "API_ERROR", "value": str(e), "confidence": 0.0}]
+        return [{"type": "API_ERROR", "value": str(e), "confidence": 0.0}], None
     text = strip_json_fence(raw)
     try:
-        return json.loads(text)
+        return json.loads(text), elapsed
     except json.JSONDecodeError:
         print(f"[경고] JSON 파싱 실패, 원본 응답 보존: {text[:200]}")
-        return [{"type": "PARSE_ERROR", "value": text, "confidence": 0.0}]
+        return [{"type": "PARSE_ERROR", "value": text, "confidence": 0.0}], elapsed
 
 
 def main():
@@ -100,7 +103,8 @@ def main():
     results = []
     for idx, row in df.iterrows():
         row_dict = row.to_dict()
-        entities = tag_generated_by(extract_row(args.provider, api_key, model, row_dict), label)
+        entities, elapsed = extract_row(args.provider, api_key, model, row_dict)
+        entities = tag_latency(tag_generated_by(entities, label), elapsed)
         results.append({
             "row_index": int(idx),
             "source_row": row_dict,

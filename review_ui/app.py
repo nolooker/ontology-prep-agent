@@ -38,7 +38,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from llm_client import DEFAULT_MODELS, call_llm, strip_json_fence
+from llm_client import DEFAULT_MODELS, call_llm, provider_label, strip_json_fence, tag_generated_by, tag_latency
 
 try:
     import anthropic  # noqa: F401
@@ -266,9 +266,10 @@ AI가 "A는 B다"라는 형태로 만든 **관계 후보**들을 하나씩 보�
 
 - **소스별 분포**: 전체 엔티티/관계 중 몇 건이 어떤 모델(또는 규칙 기반
   시뮬레이터)로 만들어졌는지 막대로 보여줍니다.
-- **모델별 평균 신뢰도 · 승인율**: 어떤 모델이 상대적으로 더 정확한
-  결과를 냈는지 비교해볼 수 있습니다. 승인율은 **🔗 관계 후보 검증**
-  탭에서 검토를 시작해야 실시간으로 계산됩니다 (검토 전에는 "검토 전"으로 표시).
+- **모델별 평균 신뢰도 · 응답 속도 · 승인율**: 어떤 모델이 상대적으로 더 정확하고
+  빠른지 비교해볼 수 있습니다. 응답 속도는 실제 API를 호출한 경우에만 기록되고,
+  승인율은 **🔗 관계 후보 검증** 탭에서 검토를 시작해야 실시간으로 계산됩니다
+  (검토 전에는 "검토 전"으로 표시).
 - 특별히 눌러야 할 버튼은 없고, 그냥 훑어보는 통계 화면입니다.
 """)
 
@@ -351,10 +352,13 @@ AI가 "A는 B다"라는 형태로 만든 **관계 후보**들을 하나씩 보�
 # ---------------------------------------------------------------------------
 
 def call_llm_extract(provider, api_key, model, text):
-    raw = call_llm(provider, api_key, model, EXTRACT_SYSTEM_PROMPT,
-                    "다음 문단에서 엔티티 후보를 추출하세요:\n\n" + text, max_tokens=1500)
+    raw, elapsed = call_llm(provider, api_key, model, EXTRACT_SYSTEM_PROMPT,
+                             "다음 문단에서 엔티티 후보를 추출하세요:\n\n" + text, max_tokens=1500)
     out = strip_json_fence(raw)
-    return json.loads(out), out
+    entities = json.loads(out)
+    tag_generated_by(entities, provider_label(provider, model))
+    tag_latency(entities, elapsed)
+    return entities, out
 
 
 PROVIDER_LABELS = {
@@ -838,15 +842,19 @@ def render_governance_tab(args):
             st.write(f"**{src}** — {count}건")
             st.progress(count / len(relations_all) if relations_all else 0)
 
-    st.markdown("### 🎯 모델별 평균 신뢰도 · 승인율")
+    st.markdown("### 🎯 모델별 평균 신뢰도 · 응답 속도 · 승인율")
     per_source = {}
     for r in relations_all:
         src = r.get("generated_by", "출처 미기록")
-        stat = per_source.setdefault(src, {"count": 0, "conf_sum": 0.0, "approved": 0})
+        stat = per_source.setdefault(src, {"count": 0, "conf_sum": 0.0, "approved": 0,
+                                            "latency_sum": 0, "latency_n": 0})
         stat["count"] += 1
         stat["conf_sum"] += r["confidence"]
         if r["status"] in ("approved", "edited"):
             stat["approved"] += 1
+        if r.get("latency_ms") is not None:
+            stat["latency_sum"] += r["latency_ms"]
+            stat["latency_n"] += 1
 
     rows = []
     for src, stat in sorted(per_source.items(), key=lambda kv: -kv[1]["count"]):
@@ -854,15 +862,16 @@ def render_governance_tab(args):
             "생성 소스": src,
             "관계 건수": stat["count"],
             "평균 신뢰도": round(stat["conf_sum"] / stat["count"], 2),
+            "평균 응답시간": f"{round(stat['latency_sum'] / stat['latency_n'])}ms" if stat["latency_n"] else "미기록",
             "승인율": f"{stat['approved'] / stat['count']:.0%}" if live_review else "검토 전",
         })
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
-    if not live_review:
-        st.caption(
-            "💡 승인율은 '🔗 관계 후보 검증' 탭에서 검토를 한 번이라도 시작하면 "
-            "이 화면에도 실시간으로 반영됩니다 (지금은 아직 검토 전이라 계산하지 않음)."
-        )
+    st.caption(
+        "💡 응답시간은 실제 API 호출 1건당 걸린 시간입니다 (규칙 기반 시뮬레이터나 과거 데모 데이터는 "
+        "기록이 없어 '미기록'으로 표시됩니다). 승인율은 '🔗 관계 후보 검증' 탭에서 검토를 한 번이라도 "
+        "시작하면 이 화면에도 실시간으로 반영됩니다." + ("" if live_review else " (지금은 검토 전)")
+    )
 
 
 # ---------------------------------------------------------------------------

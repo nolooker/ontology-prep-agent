@@ -35,7 +35,9 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from llm_client import call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by
+from llm_client import (
+    call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by, tag_latency,
+)
 
 SYSTEM_PROMPT = """당신은 온톨로지 구축을 위한 관계 추론 엔진입니다.
 입력으로 한 행에서 추출된 엔티티 후보 목록이 주어지면, 그 엔티티들
@@ -66,25 +68,26 @@ def build_user_prompt(entities: list) -> str:
     return "다음 엔티티들 사이의 관계 후보를 생성하세요:\n" + "\n".join(entity_lines)
 
 
-def generate_relations(provider: str, api_key: str, model: str, entities: list) -> list:
+def generate_relations(provider: str, api_key: str, model: str, entities: list):
+    """반환값: (관계 리스트, API 호출 소요 시간(초) 또는 실패/스킵 시 None)"""
     if not entities:
-        return []
+        return [], None
     try:
-        raw = call_llm(provider, api_key, model, SYSTEM_PROMPT, build_user_prompt(entities), max_tokens=2048)
+        raw, elapsed = call_llm(provider, api_key, model, SYSTEM_PROMPT, build_user_prompt(entities), max_tokens=2048)
     except Exception as e:
         # 재시도까지 소진한 뒤에도 실패하면 이 행만 건너뛰고 나머지 배치는 계속 진행한다.
         print(f"[경고] API 호출 실패, 이 행은 건너뜀: {e}")
-        return []
+        return [], None
     text = strip_json_fence(raw)
     try:
         relations = json.loads(text)
     except json.JSONDecodeError:
         print(f"[경고] JSON 파싱 실패: {text[:200]}")
-        return []
+        return [], elapsed
 
     for rel in relations:
         rel.setdefault("status", "pending")
-    return relations
+    return relations, elapsed
 
 
 def main():
@@ -107,7 +110,8 @@ def main():
 
     results = []
     for item in entity_results:
-        relations = tag_generated_by(generate_relations(args.provider, api_key, model, item["entities"]), label)
+        relations, elapsed = generate_relations(args.provider, api_key, model, item["entities"])
+        relations = tag_latency(tag_generated_by(relations, label), elapsed)
         results.append({
             "row_index": item["row_index"],
             "relations": relations,

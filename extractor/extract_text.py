@@ -23,7 +23,9 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from llm_client import call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by
+from llm_client import (
+    call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by, tag_latency,
+)
 
 SYSTEM_PROMPT = """당신은 온톨로지 구축을 위한 정보 추출 엔진입니다.
 입력으로 비정형 한국어 문단이 주어지면, 그 안에서 식별 가능한 엔티티
@@ -51,14 +53,15 @@ def build_user_prompt(text: str) -> str:
     return "다음 문단에서 엔티티 후보를 추출하세요:\n\n" + text
 
 
-def extract_paragraph(provider: str, api_key: str, model: str, text: str) -> list:
-    raw = call_llm(provider, api_key, model, SYSTEM_PROMPT, build_user_prompt(text), max_tokens=1500)
+def extract_paragraph(provider: str, api_key: str, model: str, text: str):
+    """반환값: (엔티티 리스트, API 호출 소요 시간(초))"""
+    raw, elapsed = call_llm(provider, api_key, model, SYSTEM_PROMPT, build_user_prompt(text), max_tokens=1500)
     out = strip_json_fence(raw)
     try:
-        return json.loads(out)
+        return json.loads(out), elapsed
     except json.JSONDecodeError:
         print(f"[경고] JSON 파싱 실패: {out[:200]}")
-        return [{"type": "PARSE_ERROR", "value": out, "confidence": 0.0}]
+        return [{"type": "PARSE_ERROR", "value": out, "confidence": 0.0}], elapsed
 
 
 def main():
@@ -78,10 +81,8 @@ def main():
     with open(args.input, "r", encoding="utf-8") as f:
         text = f.read()
 
-    entities = tag_generated_by(
-        extract_paragraph(args.provider, api_key, model, text),
-        provider_label(args.provider, model),
-    )
+    entities, elapsed = extract_paragraph(args.provider, api_key, model, text)
+    entities = tag_latency(tag_generated_by(entities, provider_label(args.provider, model)), elapsed)
 
     result = [{"source_doc": args.input, "entities": entities}]
     with open(args.output, "w", encoding="utf-8") as f:
