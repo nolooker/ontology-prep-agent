@@ -21,13 +21,18 @@ import json
 
 import pandas as pd
 
+GENERATED_BY = "simulate_pipeline (규칙 기반)"
+
 
 def extract_entities(row: dict) -> list:
     entities = []
 
     def add(etype, value, confidence):
         if pd.notna(value) and str(value).strip():
-            entities.append({"type": etype, "value": str(value).strip(), "confidence": confidence})
+            entities.append({
+                "type": etype, "value": str(value).strip(), "confidence": confidence,
+                "generated_by": GENERATED_BY,
+            })
 
     add("상가", row.get("상호명"), 0.95)
     add("대분류업종", row.get("상권업종대분류명"), 0.95)
@@ -52,6 +57,7 @@ def generate_relations(row: dict) -> list:
             relations.append({
                 "subject": str(subj).strip(), "predicate": pred, "object": str(obj).strip(),
                 "confidence": confidence, "evidence": evidence, "status": "pending",
+                "generated_by": GENERATED_BY,
             })
 
     name = row.get("상호명")

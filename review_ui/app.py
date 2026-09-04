@@ -197,6 +197,9 @@ AI가 "A는 B다"라는 형태로 만든 **관계 후보**들을 하나씩 보�
 - **근거** 문구는 AI가 왜 그렇게 판단했는지 설명한 것입니다. 이걸 읽고 맞는지 판단하시면 됩니다.
 - 카드 제목 옆 **🧾 CSV** / **📰 텍스트** 표시는 이 정보가 표(엑셀형) 자료에서 왔는지,
   기사(줄글) 자료에서 왔는지를 구분해줍니다.
+- **🏷️ 생성** 표시는 이 관계를 **어떤 AI 모델(또는 규칙 기반 로직)이 만들었는지** 보여줍니다.
+  사이드바의 **"🏷️ 생성 소스 현황"**을 펼치면 전체 통계도 볼 수 있습니다 — 나중에 특정 모델의
+  결과만 따로 신뢰도를 검증하고 싶을 때 유용합니다.
 
 **할 일:**
 1. 관계 내용과 근거를 읽어봅니다.
@@ -250,6 +253,7 @@ AI가 "A는 B다"라는 형태로 만든 **관계 후보**들을 하나씩 보�
   올바른 이름으로 합쳐진 것입니다.
 - 마우스로 화면을 끌면 이동하고, 스크롤하면 확대/축소됩니다.
 - 동그라미를 클릭하면 오른쪽에 그 항목과 연결된 모든 관계, 근거, 신뢰도가 자세히 나옵니다.
+- 상세 패널의 **🏷️ 생성** 표시로 그 노드/관계를 어떤 모델이 만들었는지도 확인할 수 있습니다.
 - 왼쪽 위 검색창에 이름을 입력하면 그 항목을 바로 찾아줍니다.
 """)
 
@@ -505,6 +509,11 @@ def render_relation_tab(args):
     rejected = sum(1 for r in all_rels if r["status"] == "rejected")
     pending = sum(1 for r in all_rels if r["status"] == "pending")
 
+    source_counts = {}
+    for r in all_rels:
+        src = r.get("generated_by", "출처 미기록")
+        source_counts[src] = source_counts.get(src, 0) + 1
+
     with st.sidebar:
         st.header("관계 검증 진행 현황")
         st.metric("전체 관계 후보", total)
@@ -513,6 +522,11 @@ def render_relation_tab(args):
         col2.metric("거부", rejected)
         col3.metric("대기", pending)
         st.progress(0 if total == 0 else (approved + rejected) / total)
+
+        with st.expander("🏷️ 생성 소스 현황 (거버넌스)"):
+            st.caption("이 관계 후보들이 어떤 모델/방식으로 만들어졌는지 보여줍니다.")
+            for src, count in sorted(source_counts.items(), key=lambda kv: -kv[1]):
+                st.caption(f"{src}: {count}건 ({count / total:.0%})" if total else f"{src}: {count}건")
 
         st.divider()
         filter_option = st.radio(
@@ -575,7 +589,9 @@ def render_relation_tab(args):
 
                 cols[0].markdown(f"{status_color} {triple_text}{low_conf_flag}")
                 cols[0].caption(f"근거: {rel['evidence']}")
+                generated_by = rel.get("generated_by", "출처 미기록")
                 cols[1].caption(f"신뢰도 {rel['confidence']:.2f} · 상태: {rel['status']}")
+                cols[1].caption(f"🏷️ 생성: {generated_by}")
 
                 key_prefix = f"item{item_idx}_rel{rel_idx}"
                 if cols[2].button("✅ 승인", key=f"{key_prefix}_approve"):

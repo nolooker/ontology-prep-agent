@@ -157,3 +157,16 @@ def strip_json_fence(text: str) -> str:
         if out.startswith("json"):
             out = out[4:]
     return out.strip()
+
+
+def provider_label(provider: str, model: str) -> str:
+    """엔티티/관계에 붙일 출처 라벨. 예: 'gemini:gemini-3.5-flash-lite'.
+    누가/무엇이 이 값을 만들었는지 추적(governance)하는 용도."""
+    return f"{provider}:{model}"
+
+
+def tag_generated_by(items: list, label: str) -> list:
+    """엔티티/관계 딕셔너리 리스트에 출처 라벨을 일괄로 붙인다."""
+    for item in items:
+        item["generated_by"] = label
+    return items

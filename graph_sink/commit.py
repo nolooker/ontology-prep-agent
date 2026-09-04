@@ -37,6 +37,7 @@ from collections import defaultdict
 
 
 ENTITY_TYPE_LOOKUP = {}  # value -> type, entities_candidates*.json에서 채움
+ENTITY_SOURCE_LOOKUP = {}  # value -> generated_by (거버넌스/추적성: 어떤 모델이 만들었는지)
 
 NO_MERGE_DECISIONS = {"신규 엔티티로 추가"}
 
@@ -50,6 +51,8 @@ def load_entity_types(entities_path):
         for ent in item["entities"]:
             # 같은 값이 여러 타입으로 잡히면 먼저 본 것 유지 (실전에선 충돌 해결 로직 필요)
             ENTITY_TYPE_LOOKUP.setdefault(ent["value"], ent["type"])
+            if ent.get("generated_by"):
+                ENTITY_SOURCE_LOOKUP.setdefault(ent["value"], ent["generated_by"])
 
 
 def load_alias_map(resolution_path):
@@ -87,13 +90,16 @@ def build_graph(relations_data, committable_statuses, alias_map=None):
     def get_or_create_node(raw_value):
         value = resolve(raw_value)
         if value not in nodes:
-            # 별칭 해석 후 값의 타입을 모르면(예: CSV 샘플에 없는 법정동),
-            # 원래 텍스트 표현의 타입으로 대체 추정한다.
+            # 별칭 해석 후 값의 타입/출처를 모르면(예: CSV 샘플에 없는 법정동),
+            # 원래 텍스트 표현의 타입/출처로 대체 추정한다.
             node_type = ENTITY_TYPE_LOOKUP.get(value) or ENTITY_TYPE_LOOKUP.get(raw_value, "미분류")
+            generated_by = ENTITY_SOURCE_LOOKUP.get(value) or ENTITY_SOURCE_LOOKUP.get(raw_value)
             nodes[value] = {
                 "id": value,
                 "type": node_type,
             }
+            if generated_by:
+                nodes[value]["generated_by"] = generated_by
         node = nodes[value]
         if raw_value != value:
             merged_from = node.setdefault("merged_from", [])
@@ -120,6 +126,7 @@ def build_graph(relations_data, committable_statuses, alias_map=None):
                     "source_id": source_id,
                     "evidence": rel["evidence"],
                     "review_status": rel["status"],
+                    "generated_by": rel.get("generated_by", "미기록"),
                 },
             })
 
@@ -191,7 +198,7 @@ def main():
               ", ".join(f"'{k}'->'{v}'" for k, v in alias_map.items()))
     if skipped:
         skip_summary = ", ".join(f"{status}: {count}건" for status, count in skipped.items())
-        print(f"반영 제외됨 ({skip_summary}) — pending/rejected 상태는 그래프에 반영되지 않습니다.")
+        print(f"반영 제외됨 ({skip_summary}) - pending/rejected 상태는 그래프에 반영되지 않습니다.")
 
 
 if __name__ == "__main__":

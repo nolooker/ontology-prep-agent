@@ -2,15 +2,60 @@
   {
     "source_doc": "data/raw_unstructured/seongsu_cafe_street_demo.txt",
     "entities": [
-      {"type": "시도", "value": "서울특별시", "confidence": 0.95},
-      {"type": "시군구", "value": "성동구", "confidence": 0.95},
-      {"type": "행정동", "value": "성수동", "confidence": 0.8},
-      {"type": "상권", "value": "성수동 카페거리", "confidence": 0.9},
-      {"type": "도로", "value": "연무장길", "confidence": 0.9},
-      {"type": "기관", "value": "서울시 도시공간본부", "confidence": 0.9},
-      {"type": "정책/계획", "value": "지구단위계획", "confidence": 0.85},
-      {"type": "상가/브랜드", "value": "스페셜티 커피 브랜드 1호점", "confidence": 0.35},
-      {"type": "통계수치", "value": "일평균 유동인구 9만 명 이상", "confidence": 0.7}
+      {
+        "type": "시도",
+        "value": "서울특별시",
+        "confidence": 0.95,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "시군구",
+        "value": "성동구",
+        "confidence": 0.95,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "행정동",
+        "value": "성수동",
+        "confidence": 0.8,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "상권",
+        "value": "성수동 카페거리",
+        "confidence": 0.9,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "도로",
+        "value": "연무장길",
+        "confidence": 0.9,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "기관",
+        "value": "서울시 도시공간본부",
+        "confidence": 0.9,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "정책/계획",
+        "value": "지구단위계획",
+        "confidence": 0.85,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "상가/브랜드",
+        "value": "스페셜티 커피 브랜드 1호점",
+        "confidence": 0.35,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      },
+      {
+        "type": "통계수치",
+        "value": "일평균 유동인구 9만 명 이상",
+        "confidence": 0.7,
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
+      }
     ]
   }
 ]

@@ -46,47 +46,56 @@
       {
         "type": "상가",
         "value": "웨스트피지오짐",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "예술·스포츠",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "스포츠 서비스",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "헬스장",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "체력 단련시설 운영업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "용인시 기흥구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "마북동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "마북동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -137,52 +146,62 @@
       {
         "type": "상가",
         "value": "이리카츠",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "한식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "돼지고기 구이/찜",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "한식 육류 요리 전문점",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "울산광역시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "울주군",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "온양읍",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "온양읍",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "이리카츠",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -233,47 +252,56 @@
       {
         "type": "상가",
         "value": "투사랑해사랑해노래연습장",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "예술·스포츠",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "유원지·오락",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "노래방",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "노래 연습장 운영업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경상북도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "포항시 남구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "상대동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "대도동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -324,52 +352,62 @@
       {
         "type": "상가",
         "value": "건축사사무소오삼일비",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "과학·기술",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "기술 서비스",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "건축 설계 및 관련 서비스업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "건축 설계 및 관련 서비스업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "서울특별시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "동대문구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "장안1동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "장안동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "J아파트",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -420,47 +458,56 @@
       {
         "type": "상가",
         "value": "현동노래방",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "주점",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "일반 유흥 주점",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "일반 유흥 주점업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경상남도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "창원시 마산합포구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "현동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "현동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -511,47 +558,56 @@
       {
         "type": "상가",
         "value": "청도감이야기",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "한식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "백반/한정식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "한식 일반 음식점업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경상북도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "청도군",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "운문면",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "운문면",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -602,52 +658,62 @@
       {
         "type": "상가",
         "value": "부자부동산중개법인",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "부동산",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "부동산 서비스",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "부동산 중개/대리업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "부동산 중개 및 대리업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경상남도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "창원시 성산구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "중앙동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "중앙동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "올림피아상가",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -698,47 +764,56 @@
       {
         "type": "상가",
         "value": "티오엠",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "과학·기술",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "광고",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "광고 대행업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "광고 대행업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "충청북도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "제천시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "백운면",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "백운면",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -789,52 +864,62 @@
       {
         "type": "상가",
         "value": "원디엑스",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "과학·기술",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "기술 서비스",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "환경 관련 엔지니어링 서비스업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "환경 관련 엔지니어링 서비스업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "전북특별자치도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "전주시 덕진구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "여의동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "만성동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "스페이스온지식산업센터",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -885,52 +970,62 @@
       {
         "type": "상가",
         "value": "수담수학교습소",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "일반 교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "입시·교과학원",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "일반 교과학원",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "서울특별시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "강동구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "고덕2동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "고덕동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "고덕그라시움아파트",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -981,47 +1076,56 @@
       {
         "type": "상가",
         "value": "더춘장",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "중식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "중국집",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "중식 음식점업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "안양시 만안구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "안양1동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "안양동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1072,52 +1176,62 @@
       {
         "type": "상가",
         "value": "맨투맨학원",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "일반 교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "입시·교과학원",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "일반 교과학원",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "의정부시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "송산3동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "낙양동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "폴리프라자",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1168,47 +1282,56 @@
       {
         "type": "상가",
         "value": "기와집",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "숙박",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "일반 숙박",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "펜션",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "민박업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "양평군",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "서종면",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "서종면",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1259,52 +1382,62 @@
       {
         "type": "상가",
         "value": "제이피누수",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "과학·기술",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "광고",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "광고물 설계/제작업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "광고물 문안; 도안; 설계 등 작성업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "용인시 기흥구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "보정동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "보정동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "휴먼타워",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1355,47 +1488,56 @@
       {
         "type": "상가",
         "value": "롯데1번지부동산공인중개사사무소",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "부동산",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "부동산 서비스",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "부동산 중개/대리업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "부동산 중개 및 대리업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "부산광역시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "동래구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "사직3동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "사직동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1446,52 +1588,62 @@
       {
         "type": "상가",
         "value": "정시파이터수학교습소",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "일반 교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "입시·교과학원",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "일반 교과학원",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "서울특별시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "양천구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "목5동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "목동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "현대월드타워",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1542,47 +1694,56 @@
       {
         "type": "상가",
         "value": "복음내과의원",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "보건의료",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "의원",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "내과/소아과 의원",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "일반의원",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "전남광주통합특별시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "남구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "봉선2동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "봉선동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1633,52 +1794,62 @@
       {
         "type": "상가",
         "value": "지고트",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "섬유·의복·신발 소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "여성 의류 소매업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "여자용 겉옷 소매업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "서울특별시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "중구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "광희동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "을지로6가",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "지고트현대시티타워",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1729,47 +1900,56 @@
       {
         "type": "상가",
         "value": "슬림점핑다이어트",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "식료품 소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "건강보조식품 소매업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "건강 보조식품 소매업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "대구광역시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "달서구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "유천동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "대천동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1820,47 +2000,56 @@
       {
         "type": "상가",
         "value": "구구열쇠",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "철물·건설자재 소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "철물/공구 소매업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "철물 및 난방용구 소매업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경상북도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "구미시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "형곡2동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "형곡동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1911,52 +2100,62 @@
       {
         "type": "상가",
         "value": "시원뷰티",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "수리·개인",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "이용·미용",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "피부 관리실",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "피부 미용업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "인천광역시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "부평구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "삼산2동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "삼산동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "삼산동이리옴프라자",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2007,47 +2206,56 @@
       {
         "type": "상가",
         "value": "치킨신드롬",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "기타 간이",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "치킨",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "치킨 전문점",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "충청북도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "음성군",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "음성읍",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "음성읍",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2098,47 +2306,56 @@
       {
         "type": "상가",
         "value": "다모아",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "예술·스포츠",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "유원지·오락",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "복권 발행/판매업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "복권 발행 및 판매업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "서울특별시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "구로구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "구로5동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "구로동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2189,47 +2406,56 @@
       {
         "type": "상가",
         "value": "향림한약국",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "의약·화장품 소매",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "약국",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "의약품 및 의료용품 소매업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경상남도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "창원시 성산구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "반송동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "반지동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2280,47 +2506,56 @@
       {
         "type": "상가",
         "value": "촌랩",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "기타 교육",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "청소년 수련시설",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "청소년 수련시설 운영업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "광주시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "퇴촌면",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "퇴촌면",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2371,47 +2606,56 @@
       {
         "type": "상가",
         "value": "대성환경개발",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "시설관리·임대",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "청소·방제",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "건축물 일반 청소업",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "건축물 일반 청소업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "수원시 장안구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "조원1동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "조원동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2462,52 +2706,62 @@
       {
         "type": "상가",
         "value": "롯데리아범어",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "기타 간이",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "버거",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "비주거용 건물 임대업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "대구광역시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "수성구",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "범어1동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "범어동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "궁전맨션",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2558,47 +2812,56 @@
       {
         "type": "상가",
         "value": "아워홈LG디스플레이기숙사점주",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "구내식당·뷔페",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "구내식당",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "기관 구내식당업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "파주시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "월롱면",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "월롱면",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2649,47 +2912,56 @@
       {
         "type": "상가",
         "value": "지투모터스",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "수리·개인",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "자동차 수리·세차",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "자동차 세차장",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "자동차 세차업",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경기도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "광명시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "광명5동",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "광명동",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -2740,52 +3012,62 @@
       {
         "type": "상가",
         "value": "영계치킨",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "대분류업종",
         "value": "음식",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "중분류업종",
         "value": "기타 간이",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "소분류업종",
         "value": "치킨",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "표준산업분류",
         "value": "치킨 전문점",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시도",
         "value": "경상남도",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "시군구",
         "value": "밀양시",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "행정동",
         "value": "상남면",
-        "confidence": 0.95
+        "confidence": 0.95,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "법정동",
         "value": "상남면",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "type": "건물",
         "value": "밀양예림대동타운",
-        "confidence": 0.9
+        "confidence": 0.9,
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   }

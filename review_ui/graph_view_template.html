@@ -316,7 +316,8 @@
   }
 
   var nodes = GRAPH.nodes.map(function(n){
-    return {id:n.id, type:n.type, mergedFrom:n.merged_from||null, category:categoryOf(n.type)};
+    return {id:n.id, type:n.type, mergedFrom:n.merged_from||null, category:categoryOf(n.type),
+            generatedBy:n.generated_by||null};
   });
   var nodeById = {};
   nodes.forEach(function(n){ nodeById[n.id]=n; });
@@ -492,6 +493,9 @@
     var html = '<button id="detail-close" title="닫기">&times;</button>' +
       '<div class="d-type"><span class="dot" style="background:'+catColor(d.category)+'"></span>'+d.type+' &middot; '+catLabel+'</div>' +
       '<div id="detail-title">'+escapeHtml(d.id)+'</div>';
+    if(d.generatedBy){
+      html += '<div class="src-badge" style="margin-bottom:10px;display:inline-block;">🏷️ 생성: '+escapeHtml(d.generatedBy)+'</div>';
+    }
     if(d.mergedFrom){
       html += '<div class="merge-note" style="margin-bottom:14px;">🔗 <b>병합됨</b> — 원문 표현: '+
         d.mergedFrom.map(escapeHtml).join(', ')+'</div>';
@@ -512,6 +516,7 @@
           '<span class="mono" style="font-size:10.5px;color:var(--muted);">'+l.confidence.toFixed(2)+'</span>' +
           '<span class="src-badge">'+(l.provenance.source_type==='csv'?'CSV':'텍스트')+'</span>' +
         '</div>' +
+        '<div class="rel-evidence" style="margin-top:2px;">🏷️ '+escapeHtml(l.provenance.generated_by||'출처 미기록')+'</div>' +
       '</div>';
     });
     detailInner.innerHTML = html;

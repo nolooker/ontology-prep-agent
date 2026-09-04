@@ -8,7 +8,8 @@
         "object": "헬스장",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "헬스장",
@@ -16,7 +17,8 @@
         "object": "스포츠 서비스",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "스포츠 서비스",
@@ -24,7 +26,8 @@
         "object": "예술·스포츠",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "웨스트피지오짐",
@@ -32,7 +35,8 @@
         "object": "체력 단련시설 운영업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "웨스트피지오짐",
@@ -40,7 +44,8 @@
         "object": "마북동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "마북동",
@@ -48,7 +53,8 @@
         "object": "용인시 기흥구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "용인시 기흥구",
@@ -56,7 +62,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -69,7 +76,8 @@
         "object": "돼지고기 구이/찜",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "돼지고기 구이/찜",
@@ -77,7 +85,8 @@
         "object": "한식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "한식",
@@ -85,7 +94,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "이리카츠",
@@ -93,7 +103,8 @@
         "object": "한식 육류 요리 전문점",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "이리카츠",
@@ -101,7 +112,8 @@
         "object": "온양읍",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "온양읍",
@@ -109,7 +121,8 @@
         "object": "울주군",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "울주군",
@@ -117,7 +130,8 @@
         "object": "울산광역시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "이리카츠",
@@ -125,7 +139,8 @@
         "object": "이리카츠",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -138,7 +153,8 @@
         "object": "노래방",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "노래방",
@@ -146,7 +162,8 @@
         "object": "유원지·오락",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "유원지·오락",
@@ -154,7 +171,8 @@
         "object": "예술·스포츠",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "투사랑해사랑해노래연습장",
@@ -162,7 +180,8 @@
         "object": "노래 연습장 운영업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "투사랑해사랑해노래연습장",
@@ -170,7 +189,8 @@
         "object": "상대동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "상대동",
@@ -178,7 +198,8 @@
         "object": "포항시 남구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "포항시 남구",
@@ -186,7 +207,8 @@
         "object": "경상북도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -199,7 +221,8 @@
         "object": "건축 설계 및 관련 서비스업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "건축 설계 및 관련 서비스업",
@@ -207,7 +230,8 @@
         "object": "기술 서비스",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기술 서비스",
@@ -215,7 +239,8 @@
         "object": "과학·기술",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "건축사사무소오삼일비",
@@ -223,7 +248,8 @@
         "object": "건축 설계 및 관련 서비스업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "건축사사무소오삼일비",
@@ -231,7 +257,8 @@
         "object": "장안1동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "장안1동",
@@ -239,7 +266,8 @@
         "object": "동대문구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "동대문구",
@@ -247,7 +275,8 @@
         "object": "서울특별시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "건축사사무소오삼일비",
@@ -255,7 +284,8 @@
         "object": "J아파트",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -268,7 +298,8 @@
         "object": "일반 유흥 주점",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "일반 유흥 주점",
@@ -276,7 +307,8 @@
         "object": "주점",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "주점",
@@ -284,7 +316,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "현동노래방",
@@ -292,7 +325,8 @@
         "object": "일반 유흥 주점업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "현동노래방",
@@ -300,7 +334,8 @@
         "object": "현동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "현동",
@@ -308,7 +343,8 @@
         "object": "창원시 마산합포구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "창원시 마산합포구",
@@ -316,7 +352,8 @@
         "object": "경상남도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -329,7 +366,8 @@
         "object": "백반/한정식",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "백반/한정식",
@@ -337,7 +375,8 @@
         "object": "한식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "한식",
@@ -345,7 +384,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "청도감이야기",
@@ -353,7 +393,8 @@
         "object": "한식 일반 음식점업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "청도감이야기",
@@ -361,7 +402,8 @@
         "object": "운문면",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "운문면",
@@ -369,7 +411,8 @@
         "object": "청도군",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "청도군",
@@ -377,7 +420,8 @@
         "object": "경상북도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -390,7 +434,8 @@
         "object": "부동산 중개/대리업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부동산 중개/대리업",
@@ -398,7 +443,8 @@
         "object": "부동산 서비스",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부동산 서비스",
@@ -406,7 +452,8 @@
         "object": "부동산",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부자부동산중개법인",
@@ -414,7 +461,8 @@
         "object": "부동산 중개 및 대리업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부자부동산중개법인",
@@ -422,7 +470,8 @@
         "object": "중앙동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "중앙동",
@@ -430,7 +479,8 @@
         "object": "창원시 성산구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "창원시 성산구",
@@ -438,7 +488,8 @@
         "object": "경상남도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부자부동산중개법인",
@@ -446,7 +497,8 @@
         "object": "올림피아상가",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -459,7 +511,8 @@
         "object": "광고 대행업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광고 대행업",
@@ -467,7 +520,8 @@
         "object": "광고",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광고",
@@ -475,7 +529,8 @@
         "object": "과학·기술",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "티오엠",
@@ -483,7 +538,8 @@
         "object": "광고 대행업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "티오엠",
@@ -491,7 +547,8 @@
         "object": "백운면",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "백운면",
@@ -499,7 +556,8 @@
         "object": "제천시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "제천시",
@@ -507,7 +565,8 @@
         "object": "충청북도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -520,7 +579,8 @@
         "object": "환경 관련 엔지니어링 서비스업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "환경 관련 엔지니어링 서비스업",
@@ -528,7 +588,8 @@
         "object": "기술 서비스",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기술 서비스",
@@ -536,7 +597,8 @@
         "object": "과학·기술",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "원디엑스",
@@ -544,7 +606,8 @@
         "object": "환경 관련 엔지니어링 서비스업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "원디엑스",
@@ -552,7 +615,8 @@
         "object": "여의동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "여의동",
@@ -560,7 +624,8 @@
         "object": "전주시 덕진구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "전주시 덕진구",
@@ -568,7 +633,8 @@
         "object": "전북특별자치도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "원디엑스",
@@ -576,7 +642,8 @@
         "object": "스페이스온지식산업센터",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -589,7 +656,8 @@
         "object": "입시·교과학원",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "입시·교과학원",
@@ -597,7 +665,8 @@
         "object": "일반 교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "일반 교육",
@@ -605,7 +674,8 @@
         "object": "교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "수담수학교습소",
@@ -613,7 +683,8 @@
         "object": "일반 교과학원",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "수담수학교습소",
@@ -621,7 +692,8 @@
         "object": "고덕2동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "고덕2동",
@@ -629,7 +701,8 @@
         "object": "강동구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "강동구",
@@ -637,7 +710,8 @@
         "object": "서울특별시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "수담수학교습소",
@@ -645,7 +719,8 @@
         "object": "고덕그라시움아파트",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -658,7 +733,8 @@
         "object": "중국집",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "중국집",
@@ -666,7 +742,8 @@
         "object": "중식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "중식",
@@ -674,7 +751,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "더춘장",
@@ -682,7 +760,8 @@
         "object": "중식 음식점업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "더춘장",
@@ -690,7 +769,8 @@
         "object": "안양1동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "안양1동",
@@ -698,7 +778,8 @@
         "object": "안양시 만안구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "안양시 만안구",
@@ -706,7 +787,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -719,7 +801,8 @@
         "object": "입시·교과학원",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "입시·교과학원",
@@ -727,7 +810,8 @@
         "object": "일반 교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "일반 교육",
@@ -735,7 +819,8 @@
         "object": "교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "맨투맨학원",
@@ -743,7 +828,8 @@
         "object": "일반 교과학원",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "맨투맨학원",
@@ -751,7 +837,8 @@
         "object": "송산3동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "송산3동",
@@ -759,7 +846,8 @@
         "object": "의정부시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "의정부시",
@@ -767,7 +855,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "맨투맨학원",
@@ -775,7 +864,8 @@
         "object": "폴리프라자",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -788,7 +878,8 @@
         "object": "펜션",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "펜션",
@@ -796,7 +887,8 @@
         "object": "일반 숙박",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "일반 숙박",
@@ -804,7 +896,8 @@
         "object": "숙박",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기와집",
@@ -812,7 +905,8 @@
         "object": "민박업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기와집",
@@ -820,7 +914,8 @@
         "object": "서종면",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "서종면",
@@ -828,7 +923,8 @@
         "object": "양평군",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "양평군",
@@ -836,7 +932,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -849,7 +946,8 @@
         "object": "광고물 설계/제작업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광고물 설계/제작업",
@@ -857,7 +955,8 @@
         "object": "광고",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광고",
@@ -865,7 +964,8 @@
         "object": "과학·기술",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "제이피누수",
@@ -873,7 +973,8 @@
         "object": "광고물 문안; 도안; 설계 등 작성업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "제이피누수",
@@ -881,7 +982,8 @@
         "object": "보정동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "보정동",
@@ -889,7 +991,8 @@
         "object": "용인시 기흥구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "용인시 기흥구",
@@ -897,7 +1000,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "제이피누수",
@@ -905,7 +1009,8 @@
         "object": "휴먼타워",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -918,7 +1023,8 @@
         "object": "부동산 중개/대리업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부동산 중개/대리업",
@@ -926,7 +1032,8 @@
         "object": "부동산 서비스",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부동산 서비스",
@@ -934,7 +1041,8 @@
         "object": "부동산",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "롯데1번지부동산공인중개사사무소",
@@ -942,7 +1050,8 @@
         "object": "부동산 중개 및 대리업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "롯데1번지부동산공인중개사사무소",
@@ -950,7 +1059,8 @@
         "object": "사직3동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "사직3동",
@@ -958,7 +1068,8 @@
         "object": "동래구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "동래구",
@@ -966,7 +1077,8 @@
         "object": "부산광역시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -979,7 +1091,8 @@
         "object": "입시·교과학원",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "입시·교과학원",
@@ -987,7 +1100,8 @@
         "object": "일반 교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "일반 교육",
@@ -995,7 +1109,8 @@
         "object": "교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "정시파이터수학교습소",
@@ -1003,7 +1118,8 @@
         "object": "일반 교과학원",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "정시파이터수학교습소",
@@ -1011,7 +1127,8 @@
         "object": "목5동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "목5동",
@@ -1019,7 +1136,8 @@
         "object": "양천구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "양천구",
@@ -1027,7 +1145,8 @@
         "object": "서울특별시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "정시파이터수학교습소",
@@ -1035,7 +1154,8 @@
         "object": "현대월드타워",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1048,7 +1168,8 @@
         "object": "내과/소아과 의원",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "내과/소아과 의원",
@@ -1056,7 +1177,8 @@
         "object": "의원",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "의원",
@@ -1064,7 +1186,8 @@
         "object": "보건의료",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "복음내과의원",
@@ -1072,7 +1195,8 @@
         "object": "일반의원",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "복음내과의원",
@@ -1080,7 +1204,8 @@
         "object": "봉선2동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "봉선2동",
@@ -1088,7 +1213,8 @@
         "object": "남구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "남구",
@@ -1096,7 +1222,8 @@
         "object": "전남광주통합특별시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1109,7 +1236,8 @@
         "object": "여성 의류 소매업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "여성 의류 소매업",
@@ -1117,7 +1245,8 @@
         "object": "섬유·의복·신발 소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "섬유·의복·신발 소매",
@@ -1125,7 +1254,8 @@
         "object": "소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "지고트",
@@ -1133,7 +1263,8 @@
         "object": "여자용 겉옷 소매업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "지고트",
@@ -1141,7 +1272,8 @@
         "object": "광희동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광희동",
@@ -1149,7 +1281,8 @@
         "object": "중구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "중구",
@@ -1157,7 +1290,8 @@
         "object": "서울특별시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "지고트",
@@ -1165,7 +1299,8 @@
         "object": "지고트현대시티타워",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1178,7 +1313,8 @@
         "object": "건강보조식품 소매업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "건강보조식품 소매업",
@@ -1186,7 +1322,8 @@
         "object": "식료품 소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "식료품 소매",
@@ -1194,7 +1331,8 @@
         "object": "소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "슬림점핑다이어트",
@@ -1202,7 +1340,8 @@
         "object": "건강 보조식품 소매업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "슬림점핑다이어트",
@@ -1210,7 +1349,8 @@
         "object": "유천동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "유천동",
@@ -1218,7 +1358,8 @@
         "object": "달서구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "달서구",
@@ -1226,7 +1367,8 @@
         "object": "대구광역시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1239,7 +1381,8 @@
         "object": "철물/공구 소매업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "철물/공구 소매업",
@@ -1247,7 +1390,8 @@
         "object": "철물·건설자재 소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "철물·건설자재 소매",
@@ -1255,7 +1399,8 @@
         "object": "소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "구구열쇠",
@@ -1263,7 +1408,8 @@
         "object": "철물 및 난방용구 소매업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "구구열쇠",
@@ -1271,7 +1417,8 @@
         "object": "형곡2동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "형곡2동",
@@ -1279,7 +1426,8 @@
         "object": "구미시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "구미시",
@@ -1287,7 +1435,8 @@
         "object": "경상북도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1300,7 +1449,8 @@
         "object": "피부 관리실",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "피부 관리실",
@@ -1308,7 +1458,8 @@
         "object": "이용·미용",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "이용·미용",
@@ -1316,7 +1467,8 @@
         "object": "수리·개인",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "시원뷰티",
@@ -1324,7 +1476,8 @@
         "object": "피부 미용업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "시원뷰티",
@@ -1332,7 +1485,8 @@
         "object": "삼산2동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "삼산2동",
@@ -1340,7 +1494,8 @@
         "object": "부평구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "부평구",
@@ -1348,7 +1503,8 @@
         "object": "인천광역시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "시원뷰티",
@@ -1356,7 +1512,8 @@
         "object": "삼산동이리옴프라자",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1369,7 +1526,8 @@
         "object": "치킨",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "치킨",
@@ -1377,7 +1535,8 @@
         "object": "기타 간이",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기타 간이",
@@ -1385,7 +1544,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "치킨신드롬",
@@ -1393,7 +1553,8 @@
         "object": "치킨 전문점",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "치킨신드롬",
@@ -1401,7 +1562,8 @@
         "object": "음성읍",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "음성읍",
@@ -1409,7 +1571,8 @@
         "object": "음성군",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "음성군",
@@ -1417,7 +1580,8 @@
         "object": "충청북도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1430,7 +1594,8 @@
         "object": "복권 발행/판매업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "복권 발행/판매업",
@@ -1438,7 +1603,8 @@
         "object": "유원지·오락",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "유원지·오락",
@@ -1446,7 +1612,8 @@
         "object": "예술·스포츠",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "다모아",
@@ -1454,7 +1621,8 @@
         "object": "복권 발행 및 판매업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "다모아",
@@ -1462,7 +1630,8 @@
         "object": "구로5동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "구로5동",
@@ -1470,7 +1639,8 @@
         "object": "구로구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "구로구",
@@ -1478,7 +1648,8 @@
         "object": "서울특별시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1491,7 +1662,8 @@
         "object": "약국",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "약국",
@@ -1499,7 +1671,8 @@
         "object": "의약·화장품 소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "의약·화장품 소매",
@@ -1507,7 +1680,8 @@
         "object": "소매",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "향림한약국",
@@ -1515,7 +1689,8 @@
         "object": "의약품 및 의료용품 소매업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "향림한약국",
@@ -1523,7 +1698,8 @@
         "object": "반송동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "반송동",
@@ -1531,7 +1707,8 @@
         "object": "창원시 성산구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "창원시 성산구",
@@ -1539,7 +1716,8 @@
         "object": "경상남도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1552,7 +1730,8 @@
         "object": "청소년 수련시설",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "청소년 수련시설",
@@ -1560,7 +1739,8 @@
         "object": "기타 교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기타 교육",
@@ -1568,7 +1748,8 @@
         "object": "교육",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "촌랩",
@@ -1576,7 +1757,8 @@
         "object": "청소년 수련시설 운영업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "촌랩",
@@ -1584,7 +1766,8 @@
         "object": "퇴촌면",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "퇴촌면",
@@ -1592,7 +1775,8 @@
         "object": "광주시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광주시",
@@ -1600,7 +1784,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1613,7 +1798,8 @@
         "object": "건축물 일반 청소업",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "건축물 일반 청소업",
@@ -1621,7 +1807,8 @@
         "object": "청소·방제",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "청소·방제",
@@ -1629,7 +1816,8 @@
         "object": "시설관리·임대",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "대성환경개발",
@@ -1637,7 +1825,8 @@
         "object": "건축물 일반 청소업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "대성환경개발",
@@ -1645,7 +1834,8 @@
         "object": "조원1동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "조원1동",
@@ -1653,7 +1843,8 @@
         "object": "수원시 장안구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "수원시 장안구",
@@ -1661,7 +1852,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1674,7 +1866,8 @@
         "object": "버거",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "버거",
@@ -1682,7 +1875,8 @@
         "object": "기타 간이",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기타 간이",
@@ -1690,7 +1884,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "롯데리아범어",
@@ -1698,7 +1893,8 @@
         "object": "비주거용 건물 임대업",
         "confidence": 0.35,
         "evidence": "경고: 상권업종소분류('버거')와 표준산업분류('비주거용 건물 임대업')가 의미적으로 불일치함 — 원본 데이터의 분류 오류 가능성, 사람 검증 필수",
-        "status": "rejected"
+        "status": "rejected",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "롯데리아범어",
@@ -1706,7 +1902,8 @@
         "object": "범어1동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "범어1동",
@@ -1714,7 +1911,8 @@
         "object": "수성구",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "수성구",
@@ -1722,7 +1920,8 @@
         "object": "대구광역시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "롯데리아범어",
@@ -1730,7 +1929,8 @@
         "object": "궁전맨션",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1743,7 +1943,8 @@
         "object": "구내식당",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "구내식당",
@@ -1751,7 +1952,8 @@
         "object": "구내식당·뷔페",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "구내식당·뷔페",
@@ -1759,7 +1961,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "아워홈LG디스플레이기숙사점주",
@@ -1767,7 +1970,8 @@
         "object": "기관 구내식당업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "아워홈LG디스플레이기숙사점주",
@@ -1775,7 +1979,8 @@
         "object": "월롱면",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "월롱면",
@@ -1783,7 +1988,8 @@
         "object": "파주시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "파주시",
@@ -1791,7 +1997,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1804,7 +2011,8 @@
         "object": "자동차 세차장",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "자동차 세차장",
@@ -1812,7 +2020,8 @@
         "object": "자동차 수리·세차",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "자동차 수리·세차",
@@ -1820,7 +2029,8 @@
         "object": "수리·개인",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "지투모터스",
@@ -1828,7 +2038,8 @@
         "object": "자동차 세차업",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "지투모터스",
@@ -1836,7 +2047,8 @@
         "object": "광명5동",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광명5동",
@@ -1844,7 +2056,8 @@
         "object": "광명시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "광명시",
@@ -1852,7 +2065,8 @@
         "object": "경기도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1865,7 +2079,8 @@
         "object": "치킨",
         "confidence": 0.95,
         "evidence": "원본 컬럼 '상권업종소분류명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "치킨",
@@ -1873,7 +2088,8 @@
         "object": "기타 간이",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 소분류의 상위 중분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "기타 간이",
@@ -1881,7 +2097,8 @@
         "object": "음식",
         "confidence": 0.95,
         "evidence": "상권업종분류 체계상 중분류의 상위 대분류",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "영계치킨",
@@ -1889,7 +2106,8 @@
         "object": "치킨 전문점",
         "confidence": 0.8,
         "evidence": "상권업종분류와 표준산업분류 간 매핑, 분류체계가 달라 세부 표현은 다를 수 있음",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "영계치킨",
@@ -1897,7 +2115,8 @@
         "object": "상남면",
         "confidence": 0.9,
         "evidence": "원본 컬럼 '행정동명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "상남면",
@@ -1905,7 +2124,8 @@
         "object": "밀양시",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "밀양시",
@@ -1913,7 +2133,8 @@
         "object": "경상남도",
         "confidence": 0.9,
         "evidence": "행정구역 상위 관계",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       },
       {
         "subject": "영계치킨",
@@ -1921,7 +2142,8 @@
         "object": "밀양예림대동타운",
         "confidence": 0.85,
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "simulate_pipeline (규칙 기반)"
       }
     ]
   },
@@ -1935,7 +2157,8 @@
         "object": "성수동",
         "confidence": 0.85,
         "evidence": "원문에서 '성동구 성수동 일대의 카페거리'로 직접 연결됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       },
       {
         "subject": "성수동",
@@ -1943,7 +2166,8 @@
         "object": "성동구",
         "confidence": 0.9,
         "evidence": "원문에서 '성동구 성수동'으로 명시됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       },
       {
         "subject": "성동구",
@@ -1951,7 +2175,8 @@
         "object": "서울특별시",
         "confidence": 0.9,
         "evidence": "원문에서 '서울 성동구'로 명시됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       },
       {
         "subject": "스페셜티 커피 브랜드 1호점",
@@ -1959,7 +2184,8 @@
         "object": "성수동 카페거리",
         "confidence": 0.4,
         "evidence": "경고: 원문에 실제 브랜드명이 명시되지 않아 구체적 상가 엔티티로 확정하기 어려움 — 사람 검증 필요",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       },
       {
         "subject": "서울시 도시공간본부",
@@ -1967,7 +2193,8 @@
         "object": "지구단위계획",
         "confidence": 0.85,
         "evidence": "원문에서 '서울시 도시공간본부는... 지구단위계획을 새로 결정'로 명시됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       },
       {
         "subject": "지구단위계획",
@@ -1975,7 +2202,8 @@
         "object": "연무장길",
         "confidence": 0.8,
         "evidence": "원문에서 '연무장길 구간을 보행자 중심 거리로 조성'으로 명시됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       },
       {
         "subject": "연무장길",
@@ -1983,7 +2211,8 @@
         "object": "성수동",
         "confidence": 0.7,
         "evidence": "원문 문맥상 성수동 내 도로로 유추됨 (직접 명시되지는 않음)",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       },
       {
         "subject": "성수동 카페거리",
@@ -1991,7 +2220,8 @@
         "object": "일평균 유동인구 9만 명 이상",
         "confidence": 0.75,
         "evidence": "원문에서 '일평균 유동인구는 9만 명을 웃도는 수준'으로 명시됨",
-        "status": "approved"
+        "status": "approved",
+        "generated_by": "데모 (사전 준비, 모델 미기록)"
       }
     ]
   }

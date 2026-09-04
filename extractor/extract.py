@@ -32,7 +32,7 @@ import sys
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from llm_client import call_llm, default_model, resolve_api_key, strip_json_fence
+from llm_client import call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by
 
 SYSTEM_PROMPT = """당신은 온톨로지 구축을 위한 정보 추출 엔진입니다.
 입력으로 상가(상권) 데이터 한 행이 주어지면, 그 행에서 식별 가능한
@@ -91,6 +91,7 @@ def main():
         from llm_client import API_KEY_ENV
         raise SystemExit(f"{API_KEY_ENV[args.provider]} 환경변수를 설정하세요.")
     model = args.model or default_model(args.provider)
+    label = provider_label(args.provider, model)
 
     df = pd.read_csv(args.input)
     if args.limit:
@@ -99,7 +100,7 @@ def main():
     results = []
     for idx, row in df.iterrows():
         row_dict = row.to_dict()
-        entities = extract_row(args.provider, api_key, model, row_dict)
+        entities = tag_generated_by(extract_row(args.provider, api_key, model, row_dict), label)
         results.append({
             "row_index": int(idx),
             "source_row": row_dict,

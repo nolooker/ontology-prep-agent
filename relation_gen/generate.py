@@ -35,7 +35,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from llm_client import call_llm, default_model, resolve_api_key, strip_json_fence
+from llm_client import call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by
 
 SYSTEM_PROMPT = """당신은 온톨로지 구축을 위한 관계 추론 엔진입니다.
 입력으로 한 행에서 추출된 엔티티 후보 목록이 주어지면, 그 엔티티들
@@ -100,13 +100,14 @@ def main():
         from llm_client import API_KEY_ENV
         raise SystemExit(f"{API_KEY_ENV[args.provider]} 환경변수를 설정하세요.")
     model = args.model or default_model(args.provider)
+    label = provider_label(args.provider, model)
 
     with open(args.input, "r", encoding="utf-8") as f:
         entity_results = json.load(f)
 
     results = []
     for item in entity_results:
-        relations = generate_relations(args.provider, api_key, model, item["entities"])
+        relations = tag_generated_by(generate_relations(args.provider, api_key, model, item["entities"]), label)
         results.append({
             "row_index": item["row_index"],
             "relations": relations,

@@ -23,7 +23,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from llm_client import call_llm, default_model, resolve_api_key, strip_json_fence
+from llm_client import call_llm, default_model, provider_label, resolve_api_key, strip_json_fence, tag_generated_by
 
 SYSTEM_PROMPT = """당신은 온톨로지 구축을 위한 정보 추출 엔진입니다.
 입력으로 비정형 한국어 문단이 주어지면, 그 안에서 식별 가능한 엔티티
@@ -78,7 +78,10 @@ def main():
     with open(args.input, "r", encoding="utf-8") as f:
         text = f.read()
 
-    entities = extract_paragraph(args.provider, api_key, model, text)
+    entities = tag_generated_by(
+        extract_paragraph(args.provider, api_key, model, text),
+        provider_label(args.provider, model),
+    )
 
     result = [{"source_doc": args.input, "entities": entities}]
     with open(args.output, "w", encoding="utf-8") as f:
