@@ -941,6 +941,46 @@
       "generated_by": "simulate_pipeline (규칙 기반)"
     },
     {
+      "id": "치킨플러스동 판교점",
+      "type": "상가",
+      "generated_by": "gemini:gemini-3.5-flash-lite"
+    },
+    {
+      "id": "삼평동",
+      "type": "행정동",
+      "generated_by": "gemini:gemini-3.5-flash-lite"
+    },
+    {
+      "id": "성남시 분당구",
+      "type": "시군구",
+      "generated_by": "gemini:gemini-3.5-flash-lite"
+    },
+    {
+      "id": "봇들마을주공6단지",
+      "type": "건물",
+      "generated_by": "gemini:gemini-3.5-flash-lite"
+    },
+    {
+      "id": "미미엘라",
+      "type": "상가",
+      "generated_by": "gemini:gemini-3.5-flash-lite"
+    },
+    {
+      "id": "삼산동",
+      "type": "법정동",
+      "generated_by": "simulate_pipeline (규칙 기반)"
+    },
+    {
+      "id": "달동",
+      "type": "법정동",
+      "generated_by": "gemini:gemini-3.5-flash-lite"
+    },
+    {
+      "id": "울산광역시 남구 왕생로72번길 12",
+      "type": "건물",
+      "generated_by": "gemini:gemini-3.5-flash-lite"
+    },
+    {
       "id": "성수동 카페거리",
       "type": "상권",
       "generated_by": "데모 (사전 준비, 모델 미기록)"
@@ -3856,6 +3896,292 @@
         "evidence": "원본 컬럼 '건물명'에서 직접 확인됨",
         "review_status": "approved",
         "generated_by": "simulate_pipeline (규칙 기반)"
+      }
+    },
+    {
+      "source": "치킨플러스동 판교점",
+      "predicate": "속한업종",
+      "target": "치킨",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "상가가 소분류업종에 속하는 형태이므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "치킨",
+      "predicate": "상위분류",
+      "target": "기타 간이",
+      "confidence": 0.9,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "소분류업종은 중분류업종의 하위 개념이므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "기타 간이",
+      "predicate": "상위분류",
+      "target": "음식",
+      "confidence": 0.9,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "중분류업종은 대분류업종의 하위 개념이므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "치킨플러스동 판교점",
+      "predicate": "표준산업분류매핑",
+      "target": "치킨 전문점",
+      "confidence": 0.9,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "상가의 업종이 표준산업분류에 매핑되므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "치킨",
+      "predicate": "표준산업분류매핑",
+      "target": "치킨 전문점",
+      "confidence": 0.9,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "업종과 표준산업분류 간의 유사성으로 인해",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "치킨플러스동 판교점",
+      "predicate": "위치",
+      "target": "삼평동",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "상가가 행정동/법정동 내에 위치하므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "삼평동",
+      "predicate": "소속",
+      "target": "성남시 분당구",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "행정동/법정동은 시군구에 소속되므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "성남시 분당구",
+      "predicate": "소속",
+      "target": "경기도",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "시군구는 시도에 소속되므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "치킨플러스동 판교점",
+      "predicate": "소재",
+      "target": "봇들마을주공6단지",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 30,
+        "evidence": "상가가 특정 건물에 소재하므로",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "미미엘라",
+      "predicate": "속한업종",
+      "target": "여성 의류 소매업",
+      "confidence": 0.99,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "동일 행에서 상가 '미미엘라'와 소분류업종 '여성 의류 소매업'이 함께 추출됨.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "여성 의류 소매업",
+      "predicate": "상위분류",
+      "target": "섬유·의복·신발 소매",
+      "confidence": 0.99,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "업종 분류 계층 구조에 따라 소분류업종은 중분류업종에 속함.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "섬유·의복·신발 소매",
+      "predicate": "상위분류",
+      "target": "소매",
+      "confidence": 0.99,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "업종 분류 계층 구조에 따라 중분류업종은 대분류업종에 속함.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "미미엘라",
+      "predicate": "표준산업분류매핑",
+      "target": "여자용 겉옷 소매업",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "상가와 동일 행에 존재하는 표준산업분류 항목임.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "여성 의류 소매업",
+      "predicate": "표준산업분류매핑",
+      "target": "여자용 겉옷 소매업",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "소분류업종과 표준산업분류 간의 유사한 업종 성격.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "미미엘라",
+      "predicate": "위치",
+      "target": "삼산동",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "동일 행에서 추출된 상가와 행정동 정보.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "미미엘라",
+      "predicate": "위치",
+      "target": "달동",
+      "confidence": 0.9,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "동일 행에서 추출된 상가와 법정동 정보.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "삼산동",
+      "predicate": "소속",
+      "target": "남구",
+      "confidence": 0.99,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "행정동 '삼산동'은 시군구 '남구'에 속함.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "달동",
+      "predicate": "소속",
+      "target": "남구",
+      "confidence": 0.99,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "법정동 '달동'은 시군구 '남구'에 속함.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "남구",
+      "predicate": "소속",
+      "target": "울산광역시",
+      "confidence": 0.99,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "시군구 '남구'는 시도 '울산광역시'에 속함.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "미미엘라",
+      "predicate": "소재",
+      "target": "울산광역시 남구 왕생로72번길 12",
+      "confidence": 0.99,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "동일 행에서 추출된 상가와 건물 주소 정보.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "울산광역시 남구 왕생로72번길 12",
+      "predicate": "위치",
+      "target": "남구",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "건물 주소에 시군구명 '남구'가 포함됨.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
+      }
+    },
+    {
+      "source": "울산광역시 남구 왕생로72번길 12",
+      "predicate": "위치",
+      "target": "울산광역시",
+      "confidence": 0.95,
+      "provenance": {
+        "source_type": "csv",
+        "source_id": 31,
+        "evidence": "건물 주소에 시도명 '울산광역시'가 포함됨.",
+        "review_status": "approved",
+        "generated_by": "gemini:gemini-3.5-flash-lite"
       }
     },
     {

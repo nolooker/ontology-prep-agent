@@ -270,6 +270,9 @@ AI가 "A는 B다"라는 형태로 만든 **관계 후보**들을 하나씩 보�
   빠른지 비교해볼 수 있습니다. 응답 속도는 실제 API를 호출한 경우에만 기록되고,
   승인율은 **🔗 관계 후보 검증** 탭에서 검토를 시작해야 실시간으로 계산됩니다
   (검토 전에는 "검토 전"으로 표시).
+- **전국 데이터 전체 적용 시 예상 소요 시간**: 지금까지 실제로 호출해본 속도를
+  바탕으로 "전국 277만 건 전체에 이 파이프라인을 돌리면 대략 얼마나 걸릴까"를
+  추정해줍니다. 실측 건수가 적을 때는 참고용으로만 보시면 됩니다.
 - 특별히 눌러야 할 버튼은 없고, 그냥 훑어보는 통계 화면입니다.
 """)
 
@@ -779,13 +782,24 @@ def render_graph_tab(args):
 # 탭 4: 모델 거버넌스 — 어떤 AI가 이 데이터를 만들었는지 추적
 # ---------------------------------------------------------------------------
 
-def _load_all_entities(*paths):
+def _load_entity_items(*paths):
+    """entities_candidates*.json 원본 항목(행 단위)을 그대로 이어붙여 반환한다."""
     out = []
     for path in paths:
         if path and os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
-                for item in json.load(f):
-                    out.extend(item["entities"])
+                out.extend(json.load(f))
+    return out
+
+
+def _call_latencies(items, key):
+    """행/문서 단위 items에서, 한 번의 API 호출에서 나온 엔티티/관계는 latency_ms가
+    전부 동일하므로 그룹의 첫 항목 것만 대표로 뽑아 '호출 1건당' 응답시간 목록을 만든다."""
+    out = []
+    for item in items:
+        sub = item.get(key) or []
+        if sub and sub[0].get("latency_ms") is not None:
+            out.append(sub[0]["latency_ms"])
     return out
 
 
@@ -799,7 +813,8 @@ def render_governance_tab(args):
 **모델 거버넌스·추적성**을 가볍게 흉내 낸 것입니다.
 """)
 
-    entities_all = _load_all_entities(args.entities, args.entities_text)
+    entity_items = _load_entity_items(args.entities, args.entities_text)
+    entities_all = [e for item in entity_items for e in item["entities"]]
 
     live_review = "relations_state" in st.session_state
     if live_review:
@@ -872,6 +887,34 @@ def render_governance_tab(args):
         "기록이 없어 '미기록'으로 표시됩니다). 승인율은 '🔗 관계 후보 검증' 탭에서 검토를 한 번이라도 "
         "시작하면 이 화면에도 실시간으로 반영됩니다." + ("" if live_review else " (지금은 검토 전)")
     )
+
+    st.markdown("### 📈 전국 데이터 전체 적용 시 예상 소요 시간 (추정)")
+    TOTAL_ROWS = 2_772_484  # sample_data.py로 저수지 표본추출할 때 집계된 전국 상가 데이터 전체 행 수
+
+    extract_latencies = _call_latencies(entity_items, "entities")
+    relate_latencies = _call_latencies(relation_items, "relations")
+    n_calls = len(extract_latencies) + len(relate_latencies)
+
+    if n_calls == 0:
+        st.caption("아직 실제 API 호출 기록이 없어 예상 시간을 계산할 수 없습니다 (실제 LLM으로 ①②를 한 번 이상 돌려야 표시됩니다).")
+    else:
+        avg_extract_ms = sum(extract_latencies) / len(extract_latencies) if extract_latencies else 0
+        avg_relate_ms = sum(relate_latencies) / len(relate_latencies) if relate_latencies else 0
+        per_row_ms = avg_extract_ms + avg_relate_ms
+
+        c1, c2, c3 = st.columns(3)
+        c1.metric("① 추출 평균 (건당)", f"{avg_extract_ms:.0f}ms" if extract_latencies else "미기록")
+        c2.metric("② 관계생성 평균 (건당)", f"{avg_relate_ms:.0f}ms" if relate_latencies else "미기록")
+        total_hours = per_row_ms / 1000 * TOTAL_ROWS / 3600
+        c3.metric(f"전국 {TOTAL_ROWS:,}건 순차 처리 시", f"약 {total_hours:,.0f}시간")
+
+        st.caption(
+            f"⚠️ 실제 API 호출 실측치가 {n_calls}건뿐이라 추정 신뢰도는 낮습니다 (참고용 수치). "
+            "이 계산은 한 번에 하나씩 순차로 호출한다고 가정한 것이고, 실제로는 여러 건을 "
+            "동시에 병렬 호출하면 훨씬 단축됩니다. 반대로 무료 티어는 일일/분당 요청 한도가 "
+            "있어서(모델마다 다름, 오늘 테스트 중엔 하루 20회 제한에 걸린 적도 있음) 이 속도로 "
+            "쭉 돌리는 것 자체가 현실적으로 불가능할 수 있습니다."
+        )
 
 
 # ---------------------------------------------------------------------------
